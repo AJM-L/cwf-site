@@ -67,7 +67,7 @@
 						<!-- Organization Image -->
 						<div class="relative overflow-hidden">
 							<img 
-								src={org.image} 
+								src={`${base}/${org.image}`} 
 								alt={org.name} 
 								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 							/>

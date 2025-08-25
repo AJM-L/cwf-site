@@ -31,22 +31,22 @@ The Sierra Club,https://www.sierraclub.org/,The Sierra Club is the most enduring
 Global Alliance for the Rights of Nature,https://www.garn.org/,"Our members are a diverse network of scientists, attorneys, economists, indigenous leaders, authors, spiritual leaders, business leaders, politicians, actors, homemakers, students, activists: people from all walks of life who are looking to transform our human relationship with our planet.",,,,,
 `;
 
-// Image mapping for organizations
+// Image mapping for organizations - using relative paths that will be prefixed with base path
 const imageMapping: Record<string, string> = {
-	'Western Rivers Conservancy': '/images/the-gorge/Columbia_River_(201830373).jpeg',
-	'Columbia Land Trust': '/images/the-gorge/tree-and-river.jpeg',
-	'Cascade Forest Conservancy': '/images/waterfalls/ramona-falls/trail/8R5A6217.jpeg',
-	'The Lower Columbia Estuary Partnership': '/images/the-gorge/COLUMBIA_RIVER_GORGE_BETWEEN_THE_DALLES_AND_THE_HOOD_RIVER_-_NARA_-_548143.jpg',
-	'Columbia River Fish and Wildlife Conservation Office': '/images/waterfalls/willamette-falls/july_24/8R5A6295.jpeg',
-	'Columbia Riverkeeper': '/images/the-gorge/eastern-gorge.jpg',
-	'Conservation NW': '/images/waterfalls/ramona-falls/trail/_R5A6236.jpeg',
-	'SOLVE': '/images/waterfalls/bridal-veil/_R5A5986.jpeg',
-	'Trust for Public Land': '/images/the-gorge/green.jpeg',
-	'Oregon Environmental Council': '/images/waterfalls/shepherds-dell/8R5A5924.jpeg',
-	'Oregon Department of Fish and Wildlife': '/images/the-gorge/3 Chinook salmon.jpg',
-	'Washington Department of Fish and Wildlife': '/images/the-gorge/tree-wall.jpeg',
-	'The Sierra Club': '/images/the-gorge/Deer_and_Pine_Tree-_Columbia_River_Gorge.jpg',
-	'Global Alliance for the Rights of Nature': '/images/the-gorge/more-green.jpeg'
+	'Western Rivers Conservancy': 'images/the-gorge/Columbia_River_(201830373).jpeg',
+	'Columbia Land Trust': 'images/the-gorge/tree-and-river.jpeg',
+	'Cascade Forest Conservancy': 'images/waterfalls/ramona-falls/trail/8R5A6217.jpeg',
+	'The Lower Columbia Estuary Partnership': 'images/the-gorge/COLUMBIA_RIVER_GORGE_BETWEEN_THE_DALLES_AND_THE_HOOD_RIVER_-_NARA_-_548143.jpg',
+	'Columbia River Fish and Wildlife Conservation Office': 'images/waterfalls/willamette-falls/july_24/8R5A6295.jpeg',
+	'Columbia Riverkeeper': 'images/the-gorge/eastern-gorge.jpg',
+	'Conservation NW': 'images/waterfalls/ramona-falls/trail/_R5A6236.jpeg',
+	'SOLVE': 'images/waterfalls/bridal-veil/_R5A5986.jpeg',
+	'Trust for Public Land': 'images/the-gorge/green.jpeg',
+	'Oregon Environmental Council': 'images/waterfalls/shepherds-dell/8R5A5924.jpeg',
+	'Oregon Department of Fish and Wildlife': 'images/the-gorge/3 Chinook salmon.jpg',
+	'Washington Department of Fish and Wildlife': 'images/the-gorge/tree-wall.jpeg',
+	'The Sierra Club': 'images/the-gorge/Deer_and_Pine_Tree-_Columbia_River_Gorge.jpg',
+	'Global Alliance for the Rights of Nature': 'images/the-gorge/more-green.jpeg'
 };
 
 // Category mapping based on organization focus

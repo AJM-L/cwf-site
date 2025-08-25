@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import BackButton from '$lib/BackButton.svelte';
+    import { base } from '$app/paths';
 
 
     onMount(() => {
@@ -371,14 +372,14 @@ over tough, knotted vocal chords, fading into the chorus of wind.`
 
     function getPreviewUrl(item: any): string {
         if (item.type === 'image') {
-            return `/art/${item.filename}`;
+            return `${base}/art/${item.filename}`;
         }
         // For Google Drive videos, we can't get a preview, so we'll use a placeholder
         if (item.type === 'video' && item.filename && item.filename.includes('drive.google.com')) {
-            return `/art/video-placeholder.jpg`; // This would need to be created or we can handle it differently
+            return `${base}/art/video-placeholder.jpg`; // This would need to be created or we can handle it differently
         }
         // For video and audio, we'll use a placeholder or first frame
-        return `/art/${item.filename}`;
+        return `${base}/art/${item.filename}`;
     }
 </script>
 
