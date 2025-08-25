@@ -76,7 +76,7 @@
 				on:click={(e) => e.currentTarget.parentElement?.classList.toggle('fullscreen')}
 			>
 				<img 
-					src={`${base}/images/cascades/Cascade_Range_major_volcanoes_topographic_map-fr.svg" 
+					src={`${base}/images/cascades/Cascade_Range_major_volcanoes_topographic_map-fr.svg`}
 					alt="Topographic map of major Cascade Range volcanoes"
 					class="w-full object-cover"
 					style="max-height: 500px;"
