@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 	import type { Map as LeafletMap, LayerGroup, Layer, GeoJSON } from 'leaflet';
+	import { base } from '$app/paths';
+	import { getExternalAsset } from './external-assets';
 
 	let mapContainer: HTMLDivElement;
 	let map: LeafletMap;
@@ -50,7 +52,7 @@
 	const zones: Zone[] = [
 		{
 			name: 'Willamette Valley',
-			url: '/falls/willamette-valley',
+			url: `${base}/falls/willamette-valley`,
 			description: 'Agricultural heartland with powerful cascades',
 			color: '#059669', // emerald-600
 			bounds: [
@@ -59,25 +61,25 @@
 			] as [[number, number], [number, number]],
 			center: [44.9, -122.6] as [number, number],
 			featureServiceUrl: null,
-			staticDataUrl: '/Willamette%20Basin,%20Oregon/willamette-basin-official.geojson', // Official USGS Willamette Basin boundary
+			staticDataUrl: getExternalAsset('geojson', 'willametteBasin'), // Official USGS Willamette Basin boundary
 			waterfalls: [
 				{
 					name: 'Silver Falls State Park',
 					lat: 44.8512,
 					lng: -122.6462,
-					url: '/falls/willamette-valley/silver-falls'
+					url: `${base}/falls/willamette-valley/silver-falls`
 				},
 				{
 					name: 'Willamette Falls',
 					lat: 45.3514,
 					lng: -122.6191,
-					url: '/falls/willamette-valley/willamette-falls'
+					url: `${base}/falls/willamette-valley/willamette-falls`
 				}
 			]
 		},
 		{
 			name: 'Columbia River Gorge',
-			url: '/falls/the-gorge',
+			url: `${base}/falls/the-gorge`,
 			description: 'World-renowned waterfall corridor',
 			color: '#2563eb', // blue-600
 			bounds: [
@@ -91,37 +93,37 @@
 			name: 'Bridal Veil Falls',
 			lat: 45.5545,
 			lng: -122.1803,
-			url: '/falls/the-gorge/bridal-veil'
+			url: `${base}/falls/the-gorge/bridal-veil`
 		},
 		{
 			name: 'Latourell Falls',
 			lat: 45.537,
 			lng: -122.217,
-			url: '/falls/the-gorge/latourel'
+			url: `${base}/falls/the-gorge/latourel`
 		},
 		{
 			name: "Shepperd's Dell Falls",
 			lat: 45.5483,
 			lng: -122.195,
-			url: '/falls/the-gorge/shepards-dell'
+			url: `${base}/falls/the-gorge/shepards-dell`
 		},
 		{
 					name: 'Triple Falls (Oneonta Creek)',
 					lat: 45.5885,
 					lng: -122.0807,
-					url: '/falls/the-gorge/triple-falls'
+					url: `${base}/falls/the-gorge/triple-falls`
 				},
 				{
 					name: 'Celilo Falls (Historic)',
 					lat: 45.65147,
 					lng: -120.96941,
-					url: '/falls/the-gorge/celilo-falls'
+					url: `${base}/falls/the-gorge/celilo-falls`
 				}
 			]
 		},
 		{
 			name: 'Mt. Hood Region',
-			url: '/falls/the-cascades',
+			url: `${base}/falls/the-cascades`,
 			description: 'Mountain waterfalls in volcanic landscapes',
 			color: '#dc2626', // red-600
 			bounds: [
@@ -135,7 +137,7 @@
 			// Mt. Hood polygons for overview mode
 			polygonLayers: [
 				{
-					url: '/hood_buffer.geojson',
+					url: getExternalAsset('geojson', 'hoodBuffer'),
 					name: 'Mt. Hood Region (Natural Terrain)',
 					style: {
 						color: '#dc2626',
@@ -146,7 +148,7 @@
 					}
 				},
 				{
-					url: '/hood_core.geojson',
+					url: getExternalAsset('geojson', 'hoodCore'),
 					name: 'Mt. Hood Core (NF + Wilderness)',
 					style: {
 						color: '#dc2626',
@@ -162,19 +164,19 @@
 			name: 'Ramona Falls',
 			lat: 45.37984,
 			lng: -121.77591,
-			url: '/falls/the-cascades/ramona-falls'
+			url: `${base}/falls/the-cascades/ramona-falls`
 		},
 		{
 			name: 'Zigzag Falls',
 			lat: 45.34389,
 			lng: -121.74333,
-			url: '/falls/the-cascades/zig-zag-falls'
+			url: `${base}/falls/the-cascades/zig-zag-falls`
 				}
 			]
 		},
 		{
 			name: 'Cascade Range',
-			url: '/falls/the-cascades',
+			url: `${base}/falls/the-cascades`,
 			description: 'Mountain waterfalls across the volcanic range',
 			color: '#dc2626', // red-600
 			bounds: [
@@ -190,13 +192,13 @@
 			name: 'Ramona Falls',
 			lat: 45.37984,
 			lng: -121.77591,
-			url: '/falls/the-cascades/ramona-falls'
+			url: `${base}/falls/the-cascades/ramona-falls`
 		},
 		{
 			name: 'Zigzag Falls',
 			lat: 45.34389,
 			lng: -121.74333,
-			url: '/falls/the-cascades/zig-zag-falls'
+			url: `${base}/falls/the-cascades/zig-zag-falls`
 				}
 			]
 		}
@@ -378,10 +380,13 @@
 		}
 	}
 	
-	// Function to load static GeoJSON boundary data
+	// Function to load static GeoJSON boundary data with fallback
 	async function loadStaticBoundary(staticUrl: string): Promise<any> {
 		try {
 			console.log('Loading static boundary data from:', staticUrl);
+			if (staticUrl.includes('r2.cloudflarestorage.com') || staticUrl.includes('r2.dev')) {
+				console.log('🔗 Using R2 URL for boundary data:', staticUrl);
+			}
 			const response = await fetch(staticUrl);
 			
 			if (!response.ok) {
@@ -393,6 +398,24 @@
 			return geoJsonData;
 		} catch (error) {
 			console.warn(`Failed to load static boundary from ${staticUrl}:`, error);
+			
+			// Try fallback to local file if external URL fails
+			if (staticUrl.includes('r2.cloudflarestorage.com')) {
+				const localUrl = staticUrl.replace(/^https:\/\/[^\/]+\.r2\.cloudflarestorage\.com\//, '/');
+				console.log('Trying fallback to local file:', localUrl);
+				
+				try {
+					const fallbackResponse = await fetch(localUrl);
+					if (fallbackResponse.ok) {
+						const fallbackData = await fallbackResponse.json();
+						console.log('Fallback to local file successful:', localUrl);
+						return fallbackData;
+					}
+				} catch (fallbackError) {
+					console.warn(`Fallback to local file also failed:`, fallbackError);
+				}
+			}
+			
 			return null;
 		}
 	}
@@ -528,9 +551,17 @@
 			if (!cachedHucData) {
 				try {
 					console.log('Loading and caching HUC8 data...');
-					const response = await fetch('/SandyRiverBasin/cascade-huc8s-complete.geojson');
+					const r2Url = getExternalAsset('geojson', 'cascadeHuc8s');
+					console.log('🔗 Using R2 URL:', r2Url);
+					let response = await fetch(r2Url);
+					
+					// Fallback to local file if external URL fails
 					if (!response.ok) {
-						throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+						console.warn('External HUC8 data failed, trying local fallback...');
+						response = await fetch('/SandyRiverBasin/cascade-huc8s-complete.geojson');
+						if (!response.ok) {
+							throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+						}
 					}
 					
 					// Use streaming parser for large files if available

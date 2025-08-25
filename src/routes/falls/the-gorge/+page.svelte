@@ -5,11 +5,11 @@
 
 
 	const waterfalls = [
-		{ name: 'Bridal Veil Falls', url: '/falls/the-gorge/bridal-veil', description: 'A stunning two-tiered waterfall with rich industrial history' },
-		{ name: 'Latourell Falls', url: '/falls/the-gorge/latourel', description: 'A majestic single-drop fall surrounded by basalt cliffs' },
-		{ name: "Shepperd's Dell Falls", url: '/falls/the-gorge/shepards-dell', description: 'A hidden gem accessible via historic stone bridge' },
-		{ name: 'Triple Falls (Oneonta Creek)', url: '/falls/the-gorge/triple-falls', description: 'Three distinct cascades in a spectacular gorge setting' },
-		{ name: 'Celilo Falls (Historic)', url: '/falls/the-gorge/celilo-falls', description: 'The legendary fishing falls lost beneath The Dalles Dam' }
+		{ name: 'Bridal Veil Falls', url: `${base}/falls/the-gorge/bridal-veil`, description: 'A stunning two-tiered waterfall with rich industrial history' },
+		{ name: 'Latourell Falls', url: `${base}/falls/the-gorge/latourel`, description: 'A majestic single-drop fall surrounded by basalt cliffs' },
+		{ name: "Shepperd's Dell Falls", url: `${base}/falls/the-gorge/shepards-dell`, description: 'A hidden gem accessible via historic stone bridge' },
+		{ name: 'Triple Falls (Oneonta Creek)', url: `${base}/falls/the-gorge/triple-falls`, description: 'Three distinct cascades in a spectacular gorge setting' },
+		{ name: 'Celilo Falls (Historic)', url: `${base}/falls/the-gorge/celilo-falls`, description: 'The legendary fishing falls lost beneath The Dalles Dam' }
 	];
 
 	type TimelineEvent = {

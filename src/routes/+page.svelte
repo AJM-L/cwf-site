@@ -303,7 +303,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6298.webp`}
+							src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6297.webp`}
 							alt="Willamette Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>

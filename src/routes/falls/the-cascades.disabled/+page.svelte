@@ -3,8 +3,8 @@
 	import { base } from '$app/paths';
 
 	const waterfalls = [
-		{ name: 'Ramona Falls', url: '/falls/the-cascades/ramona-falls', description: 'A delicate cascade over columnar basalt on Mount Hood' },
-		{ name: 'Zigzag Falls', url: '/falls/the-cascades/zig-zag-falls', description: 'A powerful waterfall along the Zigzag River on Mount Hood' }
+		{ name: 'Ramona Falls', url: `${base}/falls/the-cascades/ramona-falls`, description: 'A delicate cascade over columnar basalt on Mount Hood' },
+		{ name: 'Zigzag Falls', url: `${base}/falls/the-cascades/zig-zag-falls`, description: 'A powerful waterfall along the Zigzag River on Mount Hood' }
 	];
 
 	// Map style state

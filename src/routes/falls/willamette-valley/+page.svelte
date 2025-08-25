@@ -1,10 +1,11 @@
 <script lang="ts">
 	import WaterfallMap from '$lib/WaterfallMap.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 
 	const waterfalls = [
-		{ name: 'Willamette Falls', url: '/falls/willamette-valley/willamette-falls', description: 'One of the largest waterfalls in the Pacific Northwest by volume' },
-		{ name: 'Silver Falls State Park', url: '/falls/willamette-valley/silver-falls', description: 'Trail of Ten Falls featuring spectacular behind-the-falls experiences' }
+		{ name: 'Willamette Falls', url: `${base}/falls/willamette-valley/willamette-falls`, description: 'One of the largest waterfalls in the Pacific Northwest by volume' },
+		{ name: 'Silver Falls State Park', url: `${base}/falls/willamette-valley/silver-falls`, description: 'Trail of Ten Falls featuring spectacular behind-the-falls experiences' }
 	];
 </script>
 
