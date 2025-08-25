@@ -1,25 +1,26 @@
 <script lang="ts">
 	import ImageCarousel from '$lib/ImageCarousel.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 
 	// Curated selection of the best images from the silver-falls folder
 	const images = [
-		'/images/waterfalls/silver-falls/june-drake/south_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/south_falls_june_drake_2.jpg',
-		'/images/waterfalls/silver-falls/june-drake/trail_under_south_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/behind_north_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/north_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/upper_north_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/double_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/drake_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/lower_south_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/middle_north_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/twin_falls_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/south_falls_frozen_june_drake.jpg',
-		'/images/waterfalls/silver-falls/june-drake/south_falls_winter_june_drake_1.jpg',
-		'/images/waterfalls/silver-falls/june-drake/upper_north_falls_june_drake_3.jpg',
-		'/images/waterfalls/silver-falls/june-drake/south_falls_june_drake_5.jpg',
-		'/images/waterfalls/silver-falls/june-drake/lower_north_falls_june_drake.jpg'
+		`${base}/images/waterfalls/silver-falls/june-drake/south_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/south_falls_june_drake_2.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/trail_under_south_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/behind_north_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/north_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/upper_north_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/double_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/drake_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/lower_south_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/middle_north_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/twin_falls_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/south_falls_frozen_june_drake.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/south_falls_winter_june_drake_1.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/upper_north_falls_june_drake_3.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/south_falls_june_drake_5.jpg`,
+		`${base}/images/waterfalls/silver-falls/june-drake/lower_north_falls_june_drake.jpg`
 	];
 
 	const description = 'Silver Falls is an expansive State Park located 20 miles southeast of Salem in the foothills of the Cascade Mountains. The 9,064-acre preserve stands as Oregon\'s largest state park and serves as a premier example of Pacific Northwest temperate forest ecosystems.';

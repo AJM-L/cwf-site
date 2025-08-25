@@ -379,7 +379,7 @@
 	<!-- Navigation -->
 	<div class="mt-8 text-center">
 		<a 
-			href="/falls" 
+			href={`${base}/falls`}
 			class="inline-flex items-center px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors duration-200"
 		>
 			← Back to All Waterfalls

@@ -1,36 +1,37 @@
 <script lang="ts">
 	import WaterfallMap from '$lib/WaterfallMap.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 
 	const regions = [
 		{
 			name: 'Willamette Valley',
-			url: '/falls/willamette-valley',
+			url: `${base}/falls/willamette-valley`,
 			description: '',
 			waterfalls: [
-				{ name: 'Willamette Falls', url: '/falls/willamette-valley/willamette-falls' },
-				{ name: 'Silver Falls State Park', url: '/falls/willamette-valley/silver-falls' }
+				{ name: 'Willamette Falls', url: `${base}/falls/willamette-valley/willamette-falls` },
+				{ name: 'Silver Falls State Park', url: `${base}/falls/willamette-valley/silver-falls` }
 			]
 		},
 		{
 			name: 'Columbia River Gorge',
-			url: '/falls/the-gorge',
+			url: `${base}/falls/the-gorge`,
 			description: '',
 			waterfalls: [
-				{ name: 'Bridal Veil Falls', url: '/falls/the-gorge/bridal-veil' },
-				{ name: 'Latourell Falls', url: '/falls/the-gorge/latourel' },
-				{ name: "Shepperd's Dell Falls", url: '/falls/the-gorge/shepards-dell' },
-				{ name: 'Triple Falls (Oneonta Creek)', url: '/falls/the-gorge/triple-falls' },
-				{ name: 'Celilo Falls (Historic)', url: '/falls/the-gorge/celilo-falls' }
+				{ name: 'Bridal Veil Falls', url: `${base}/falls/the-gorge/bridal-veil` },
+				{ name: 'Latourell Falls', url: `${base}/falls/the-gorge/latourel` },
+				{ name: "Shepperd's Dell Falls", url: `${base}/falls/the-gorge/shepards-dell` },
+				{ name: 'Triple Falls (Oneonta Creek)', url: `${base}/falls/the-gorge/triple-falls` },
+				{ name: 'Celilo Falls (Historic)', url: `${base}/falls/the-gorge/celilo-falls` }
 			]
 		},
 		{
 			name: 'Cascade Range / Mt Hood',
-			url: '/falls/the-cascades',
+			url: `${base}/falls/the-cascades`,
 			description: '',
 			waterfalls: [
-				{ name: 'Ramona Falls', url: '/falls/the-cascades/ramona-falls' },
-				{ name: 'Zigzag Falls', url: '/falls/the-cascades/zig-zag-falls' }
+				{ name: 'Ramona Falls', url: `${base}/falls/the-cascades/ramona-falls` },
+				{ name: 'Zigzag Falls', url: `${base}/falls/the-cascades/zig-zag-falls` }
 			]
 		}
 	];

@@ -1,29 +1,30 @@
 <script lang="ts">
 	import ImageCarousel from '$lib/ImageCarousel.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 	
 	// Triple Falls photo gallery
 	const tripleFallsImages = [
-		'/images/waterfalls/triple-falls/IMG_7165.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7167.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7168.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7169.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7171.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7174.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7175.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7179.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7180.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7181.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7183.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7188.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7189.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7190.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7191.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7192.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7193.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7196.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7197.jpeg',
-		'/images/waterfalls/triple-falls/IMG_7198.jpeg'
+		`${base}/images/waterfalls/triple-falls/IMG_7165.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7167.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7168.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7169.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7171.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7174.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7175.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7179.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7180.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7181.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7183.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7188.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7189.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7190.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7191.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7192.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7193.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7196.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7197.jpeg`,
+		`${base}/images/waterfalls/triple-falls/IMG_7198.jpeg`
 	];
 
 	const description = 'Triple Falls on Oneonta Creek is a spectacular three-tiered waterfall located in the Columbia River Gorge. This unique cascade features three distinct drops that create a dramatic display of falling water through a narrow, moss-covered canyon. The falls are nestled in one of the most pristine and secluded areas of the Gorge.';

@@ -4,6 +4,7 @@
 	import { count } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import Footer from '$lib/Footer.svelte';
+	import { base } from '$app/paths';
 
 	let { children } = $props();
 	
@@ -12,7 +13,7 @@
 
 	onMount(() => {
 		// Initialize confessions audio element
-		confessionsAudio = new Audio('/Audio/confessions.mp3');
+		confessionsAudio = new Audio(`${base}/Audio/confessions.mp3`);
 		
 		// Set initial volume
 		confessionsAudio.volume = 0.0;

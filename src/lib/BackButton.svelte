@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	
 	// Determine the appropriate back URL based on current path
 	$: backUrl = getBackUrl($page.url.pathname);
@@ -19,26 +20,26 @@
 		
 		if (segments.length === 1) {
 			// Top level pages like /falls, /the-labyrinth
-			return '/';
+			return `${base}/`;
 		}
 		
 		if (segments.length === 2) {
 			// Second level pages like /falls/the-gorge
-			return `/${segments[0]}`;
+			return `${base}/${segments[0]}`;
 		}
 		
 		if (segments.length === 3) {
 			// Third level pages like /falls/the-gorge/bridal-veil
-			return `/${segments[0]}/${segments[1]}`;
+			return `${base}/${segments[0]}/${segments[1]}`;
 		}
 		
 		if (segments.length === 4) {
 			// Fourth level pages like /the-labyrinth/excellence/stop
-			return `/${segments[0]}/${segments[1]}/${segments[2]}`;
+			return `${base}/${segments[0]}/${segments[1]}/${segments[2]}`;
 		}
 		
 		// Default fallback
-		return '/';
+		return `${base}/`;
 	}
 	
 	// Custom label based on current page

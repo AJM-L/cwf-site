@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+	
 	// Get current year for copyright
 	const currentYear = new Date().getFullYear();
 </script>
@@ -13,13 +15,13 @@
 					Documenting the waterfalls, ecosystems, and conservation efforts of the Pacific Northwest's most vital watershed.
 				</p>
 				<div class="flex space-x-4">
-					<a href="/conservation" class="text-slate-400 hover:text-white transition-colors duration-200">
+					<a href={`${base}/conservation`} class="text-slate-400 hover:text-white transition-colors duration-200">
 						Conservation
 					</a>
-					<a href="/falls" class="text-slate-400 hover:text-white transition-colors duration-200">
+					<a href={`${base}/falls`} class="text-slate-400 hover:text-white transition-colors duration-200">
 						Waterfalls
 					</a>
-					<a href="/art" class="text-slate-400 hover:text-white transition-colors duration-200">
+					<a href={`${base}/art`} class="text-slate-400 hover:text-white transition-colors duration-200">
 						Gallery
 					</a>
 				</div>
@@ -29,9 +31,9 @@
 			<div>
 				<h4 class="text-white font-medium mb-4">Regions</h4>
 				<ul class="space-y-2 text-sm">
-					<li><a href="/falls/the-gorge" class="text-slate-400 hover:text-white transition-colors duration-200">Columbia River Gorge</a></li>
-					<li><a href="/falls/the-cascades" class="text-slate-400 hover:text-white transition-colors duration-200">Cascade Mountains</a></li>
-					<li><a href="/falls/willamette-valley" class="text-slate-400 hover:text-white transition-colors duration-200">Willamette Valley</a></li>
+					<li><a href={`${base}/falls/the-gorge`} class="text-slate-400 hover:text-white transition-colors duration-200">Columbia River Gorge</a></li>
+					<li><a href={`${base}/falls/the-cascades`} class="text-slate-400 hover:text-white transition-colors duration-200">Cascade Mountains</a></li>
+					<li><a href={`${base}/falls/willamette-valley`} class="text-slate-400 hover:text-white transition-colors duration-200">Willamette Valley</a></li>
 				</ul>
 			</div>
 
@@ -39,9 +41,9 @@
 			<div>
 				<h4 class="text-white font-medium mb-4">About</h4>
 				<ul class="space-y-2 text-sm">
-					<li><a href="/conservation" class="text-slate-400 hover:text-white transition-colors duration-200">Conservation Efforts</a></li>
-					<li><a href="/art" class="text-slate-400 hover:text-white transition-colors duration-200">Art Collection</a></li>
-					<li><a href="/falls" class="text-slate-400 hover:text-white transition-colors duration-200">Waterfalls</a></li>
+					<li><a href={`${base}/conservation`} class="text-slate-400 hover:text-white transition-colors duration-200">Conservation Efforts</a></li>
+					<li><a href={`${base}/art`} class="text-slate-400 hover:text-white transition-colors duration-200">Art Collection</a></li>
+					<li><a href={`${base}/falls`} class="text-slate-400 hover:text-white transition-colors duration-200">Waterfalls</a></li>
 				</ul>
 			</div>
 		</div>

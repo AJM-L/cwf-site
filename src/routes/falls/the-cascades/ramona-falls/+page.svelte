@@ -1,39 +1,40 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	
 	// Trail photos - walking experience
 	const trailPhotos = [
-		'/images/waterfalls/ramona-falls/trail/8R5A6217.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6218.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6220.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6223.jpeg',
-		'/images/waterfalls/ramona-falls/trail/_R5A6234.jpeg',
-		'/images/waterfalls/ramona-falls/trail/_R5A6236.jpeg',
-		'/images/waterfalls/ramona-falls/trail/_R5A6237.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6242.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6243.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6244.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6245.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6246.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6247.jpeg',
-		'/images/waterfalls/ramona-falls/trail/8R5A6248.jpeg'
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6217.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6218.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6220.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6223.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/_R5A6234.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/_R5A6236.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/_R5A6237.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6242.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6243.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6244.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6245.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6246.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6247.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/trail/8R5A6248.jpeg`
 	];
 
 	// Falls photos - full screen experience
 	const fallsPhotos = [
-		'/images/waterfalls/ramona-falls/falls/8R5A6250.jpeg',
-		'/images/waterfalls/ramona-falls/falls/8R5A6251.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6254.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6255.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6257.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6258.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6261.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6262.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6263.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6264.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6269.jpeg',
-		'/images/waterfalls/ramona-falls/falls/_R5A6273.jpeg'
+		`${base}/images/waterfalls/ramona-falls/falls/8R5A6250.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/8R5A6251.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6254.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6255.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6257.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6258.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6261.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6262.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6263.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6264.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6269.jpeg`,
+		`${base}/images/waterfalls/ramona-falls/falls/_R5A6273.jpeg`
 	];
 
 	let currentFallsPhoto = 0;

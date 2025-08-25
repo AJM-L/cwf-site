@@ -51,19 +51,19 @@
 			</p>
 			<div class="flex flex-col sm:flex-row gap-3 justify-center">
 				<a 
-					href="/conservation" 
+					href={`${base}/conservation`}
 					class="bg-slate-800 hover:bg-slate-900 text-white px-8 py-3 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 				>
 					Conservation
 				</a>
 				<a 
-					href="/falls" 
+					href={`${base}/falls`}
 					class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-3 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 				>
 					Waterfalls
 				</a>
 				<a 
-					href="/art" 
+					href={`${base}/art`}
 					class="bg-transparent border border-white/50 hover:border-white text-white px-8 py-3 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 				>
 					Gallery
@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<a 
-						href="/conservation" 
+						href={`${base}/conservation`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 					>
 						Learn More
@@ -163,7 +163,7 @@
 						Discover waterfalls across three distinct regions: the Columbia River Gorge, the Cascade Mountains, and the Willamette Valley.
 					</p>
 					<a 
-						href="/falls" 
+						href={`${base}/falls`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase transition-colors duration-200"
 					>
 						Explore
@@ -190,7 +190,7 @@
 						Learn about ongoing conservation initiatives protecting the watershed's biodiversity, water quality, and ecosystem health.
 					</p>
 					<a 
-						href="/conservation" 
+						href={`${base}/conservation`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase transition-colors duration-200"
 					>
 						Learn More
@@ -217,7 +217,7 @@
 						Experience the watershed through artistic interpretations including poetry, paintings, and multimedia works.
 					</p>
 					<a 
-						href="/art" 
+						href={`${base}/art`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase transition-colors duration-200"
 					>
 						View Gallery
@@ -259,7 +259,7 @@
 							The iconic gorge carved by the Columbia River features dramatic basalt cliffs and world-renowned waterfalls.
 						</p>
 						<a 
-							href="/falls/the-gorge" 
+							href={`${base}/falls/the-gorge`}
 							class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase"
 						>
 							Explore Region
@@ -288,7 +288,7 @@
 							High-altitude waterfalls cascading through old-growth forests, including Ramona Falls and Zig Zag Falls.
 						</p>
 						<a 
-							href="/falls/the-cascades" 
+							href={`${base}/falls/the-cascades`}
 							class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase"
 						>
 							Explore Region
@@ -317,7 +317,7 @@
 							Historic waterfalls including Willamette Falls and Silver Falls State Park's "Trail of Ten Falls."
 						</p>
 						<a 
-							href="/falls/willamette-valley" 
+							href={`${base}/falls/willamette-valley`}
 							class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase"
 						>
 							Explore Region
@@ -342,13 +342,13 @@
 			</p>
 			<div class="flex flex-col sm:flex-row gap-3 justify-center">
 				<a 
-					href="/conservation" 
+					href={`${base}/conservation`}
 					class="bg-white text-slate-900 px-8 py-3 text-sm font-medium tracking-wide uppercase hover:bg-slate-100 transition-colors duration-200"
 				>
 					Get Involved
 				</a>
 				<a 
-					href="/falls" 
+					href={`${base}/falls`}
 					class="border border-slate-600 text-slate-300 px-8 py-3 text-sm font-medium tracking-wide uppercase hover:border-slate-400 hover:text-white transition-colors duration-200"
 				>
 					Explore
