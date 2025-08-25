@@ -157,7 +157,7 @@
 							/>
 							<div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 text-xs">
 								{image.title}
-								{#if image.attribution} // Awful solution, works for now
+								{#if image.attribution} <!-- Awful solution, works for now -->
 									<span class="ml-2 opacity-80"><a href="https://en.wikipedia.org/wiki/User:Fredlyfish4" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">{image.attribution}</a></span>
 								{/if}
 							</div>
