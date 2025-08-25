@@ -10,12 +10,38 @@
 		`${base}/images/waterfalls/optimized/latourell/8R5A5911 (1).webp`
 	];
 
+	// Stewardship section rotating images
+	let currentStewardshipImageIndex = 0;
+	const stewardshipImages = [
+		{
+			src: `${base}/images/the-gorge/NorthernSpottedOwl.jpg`,
+			alt: "Northern Spotted Owl",
+			title: "Northern Spotted Owl",
+			attribution: null
+		},
+		{
+			src: `${base}/images/the-gorge/Pacific_lamprey_Bonneville_Dam_2017.jpg`,
+			alt: "Pacific Lamprey",
+			title: "Pacific Lamprey",
+			attribution: "Fredlyfish4"
+		}
+	];
+
 	onMount(() => {
-		const interval = setInterval(() => {
+		// Hero section rotation
+		const heroInterval = setInterval(() => {
 			currentImageIndex = (currentImageIndex + 1) % heroImages.length;
 		}, 8000);
 
-		return () => clearInterval(interval);
+		// Stewardship section rotation
+		const stewardshipInterval = setInterval(() => {
+			currentStewardshipImageIndex = (currentStewardshipImageIndex + 1) % stewardshipImages.length;
+		}, 6000);
+
+		return () => {
+			clearInterval(heroInterval);
+			clearInterval(stewardshipInterval);
+		};
 	});
 </script>
 
@@ -118,16 +144,25 @@
 					</a>
 				</div>
 
-				<!-- Stewardship Image -->
-				<div class="relative">
-					<img 
-						src={`${base}/test-image.jpg`}
-						alt="Northern Spotted Owl" 
-						class="w-full aspect-[4/3] object-cover"
-					/>
-					<div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 text-xs">
-						Northern Spotted Owl
-					</div>
+				<!-- Stewardship Image - Rotating Display -->
+				<div class="relative w-full aspect-[4/3]">
+					{#each stewardshipImages as image, index}
+						<div 
+							class="absolute inset-0 transition-opacity duration-1000 {index === currentStewardshipImageIndex ? 'opacity-100' : 'opacity-0'}"
+						>
+							<img 
+								src={image.src} 
+								alt={image.alt} 
+								class="w-full h-full object-cover"
+							/>
+							<div class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 text-xs">
+								{image.title}
+								{#if image.attribution} // Awful solution, works for now
+									<span class="ml-2 opacity-80"><a href="https://en.wikipedia.org/wiki/User:Fredlyfish4" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">{image.attribution}</a></span>
+								{/if}
+							</div>
+						</div>
+					{/each}
 				</div>
 			</div>
 		</div>
