@@ -5,26 +5,15 @@
 	
 	// Triple Falls photo gallery
 	const tripleFallsImages = [
-		`${base}/images/waterfalls/triple-falls/IMG_7165.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7167.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7168.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7169.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7171.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7174.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7175.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7179.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7180.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7181.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7183.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7188.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7189.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7190.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7191.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7192.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7193.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7196.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7197.jpeg`,
-		`${base}/images/waterfalls/triple-falls/IMG_7198.jpeg`
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7168.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7174.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7175.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7179.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7180.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7181.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7191.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7196.webp`,
+		`${base}/images/waterfalls/optimized/triple-falls/IMG_7197.webp`
 	];
 
 	const description = 'Triple Falls on Oneonta Creek is a spectacular three-tiered waterfall located in the Columbia River Gorge. This unique cascade features three distinct drops that create a dramatic display of falling water through a narrow, moss-covered canyon. The falls are nestled in one of the most pristine and secluded areas of the Gorge.';

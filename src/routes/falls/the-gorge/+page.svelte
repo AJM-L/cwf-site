@@ -262,7 +262,7 @@
 	<section class="mb-12">
 		<div class="relative overflow-hidden mb-8">
 			<div class="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-gray-900/50"></div>
-			<img src={`${base}/images/waterfalls/latourell/Columbia_drainage_basin_blank_map.png`} alt="Columbia River drainage basin" class="w-full h-64 object-cover">
+										<img src={`${base}/images/waterfalls/optimized/latourell/Columbia_drainage_basin_blank_map.webp`} alt="Columbia River drainage basin" class="w-full h-64 object-cover">
 			<div class="absolute inset-0 flex items-center justify-center">
 				<div class="text-center text-white px-6">
 					<h2 class="text-3xl font-bold mb-4">Treaties and Dispossession</h2>

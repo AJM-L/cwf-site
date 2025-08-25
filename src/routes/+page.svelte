@@ -4,10 +4,10 @@
 	
 	let currentImageIndex = 0;
 	const heroImages = [
-		`${base}/images/waterfalls/willamette-falls/july_24/8R5A6290.jpeg`,
-		`${base}/images/waterfalls/silver-falls/my-photos/8R5A6143.jpeg`,
-		`${base}/images/waterfalls/bridal-veil/_R5A6008 (1).jpeg`,
-		`${base}/images/waterfalls/latourell/8R5A5911 (1).jpeg`
+		`${base}/images/waterfalls/willamette-falls/optimized/8R5A6290.webp`,
+		`${base}/images/waterfalls/optimized/silver-falls/my-photos/8R5A6143.webp`,
+		`${base}/images/waterfalls/optimized/bridal-veil/_R5A6008 (1).webp`,
+		`${base}/images/waterfalls/optimized/latourell/8R5A5911 (1).webp`
 	];
 
 	onMount(() => {
@@ -150,7 +150,7 @@
 				<div class="group">
 					<div class="relative mb-6 overflow-hidden">
 						<img 
-							src={`${base}/images/waterfalls/silver-falls/my-photos/8R5A6199.jpeg`}
+							src={`${base}/images/waterfalls/optimized/silver-falls/my-photos/8R5A6199.webp`}
 							alt="Silver Falls State Park" 
 							class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -245,7 +245,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src={`${base}/images/waterfalls/bridal-veil/cover.jpeg`}
+							src={`${base}/images/waterfalls/optimized/bridal-veil/cover.webp`}
 							alt="Bridal Veil Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -274,7 +274,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src={`${base}/images/waterfalls/ramona-falls/falls/_R5A6262.jpeg`}
+							src={`${base}/images/cascades/optimized/mt-hood-ramona-falls.webp`}
 							alt="Ramona Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -303,7 +303,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src={`${base}/images/waterfalls/willamette-falls/july_24/8R5A6298.jpeg`}
+							src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6298.webp`}
 							alt="Willamette Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>

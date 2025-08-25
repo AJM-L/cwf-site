@@ -5,13 +5,13 @@
 
 	// All available images from the shepherds-dell folder
 	const images = [
-		`${base}/images/waterfalls/shepherds-dell/_R5A5952.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/_R5A5954.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/_R5A5956.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/8R5A5972.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/8R5A5924.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/8R5A5927.jpeg`,
-		`${base}/images/waterfalls/shepherds-dell/_R5A5955.jpeg`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/_R5A5952.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/_R5A5954.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/_R5A5956.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/8R5A5972.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/8R5A5924.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/8R5A5927.webp`,
+		`${base}/images/waterfalls/optimized/shepherds-dell/_R5A5955.webp`,
 	];
 
 	const description = 'Shepard\'s Dell Falls is a hidden waterfall in the Columbia River Gorge accessible via historic stone bridge.';
