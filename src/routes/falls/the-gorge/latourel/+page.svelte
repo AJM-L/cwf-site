@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { currentTheme, chapters } from '$lib/stores';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 
 	let currentChapter = 0;
 	let chapterElements: HTMLElement[] = [];
@@ -93,7 +94,7 @@
 						<div class="grid lg:grid-cols-3 gap-8 items-start">
 							<!-- Left Photo -->
 							<div class="lg:col-span-1 h-100">
-								<img src="/images/waterfalls/latourell/5.jpeg" alt="View of Latourell Falls from the trail" class="w-full h-100 object-cover rounded-lg shadow-lg" />
+								<img src={`${base}/images/waterfalls/latourell/5.jpeg" alt="View of Latourell Falls from the trail" class="w-full h-100 object-cover rounded-lg shadow-lg" />
 							</div>
 							
 							<!-- Center Text -->
@@ -114,20 +115,20 @@
 							
 							<!-- Right Photo -->
 							<div class="lg:col-span-1 h-100">
-								<img src="/images/waterfalls/latourell/2.jpeg" alt="Moss-covered basalt wall of Latourell Falls" class="w-full h-100 object-cover rounded-lg shadow-lg" />
+								<img src={`${base}/images/waterfalls/latourell/2.jpeg" alt="Moss-covered basalt wall of Latourell Falls" class="w-full h-100 object-cover rounded-lg shadow-lg" />
 							</div>
 						</div>
 						
 						<!-- Additional Photos Row -->
 						<div class="grid md:grid-cols-3 gap-6 mt-8">
 							<div class="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-								<img src="/images/waterfalls/latourell/1.jpeg" alt="Water cascading down the falls" class="w-full h-full object-cover" />
+								<img src={`${base}/images/waterfalls/latourell/1.jpeg" alt="Water cascading down the falls" class="w-full h-full object-cover" />
 							</div>
 							<div class="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-								<img src="/images/waterfalls/latourell/3.jpeg" alt="Trail and forest canopy" class="w-full h-full object-cover" />
+								<img src={`${base}/images/waterfalls/latourell/3.jpeg" alt="Trail and forest canopy" class="w-full h-full object-cover" />
 							</div>
 							<div class="aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
-								<img src="/images/waterfalls/latourell/6.jpeg" alt="Mist and water at the base" class="w-full h-full object-cover" />
+								<img src={`${base}/images/waterfalls/latourell/6.jpeg" alt="Mist and water at the base" class="w-full h-full object-cover" />
 							</div>
 						</div>
 					</div>

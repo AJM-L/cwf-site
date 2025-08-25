@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { conservationOrgs, categories, type ConservationOrg } from '$lib/data/conservation';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
+
 	
 	let selectedCategory = 'All';
 	let filteredOrgs = conservationOrgs;
@@ -207,7 +209,7 @@
 				<!-- Image -->
 				<div class="relative">
 					<img 
-						src="/images/the-gorge/tree-and-river.jpeg" 
+						src={`${base}/images/the-gorge/tree-and-river.jpeg`}
 						alt="Columbia River and forest" 
 						class="w-full aspect-[4/3] object-cover"
 					/>

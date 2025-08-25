@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 	
 	// Historic waterfall - no current images as it was submerged in 1957
 	const description = 'Celilo Falls was once one of the most significant waterfalls and fishing sites in North America, located on the Columbia River. For thousands of years, it served as the economic and cultural center for Indigenous peoples of the Pacific Northwest. The falls were permanently submerged in 1957 by the construction of The Dalles Dam, marking the end of an era and the loss of a sacred site.';
@@ -84,7 +85,7 @@
 				<!-- Image 1: 1910 view -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/Celilo_Falls_1910_OrHi_66878.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_1910_OrHi_66878.jpg`}
 						alt="Celilo Falls in 1910, showing the natural cascades and rapids of the Columbia River" 
 						class="w-full h-64 object-cover"
 					/>
@@ -98,7 +99,7 @@
 				<!-- Image 2: Fishing at Celilo -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_OrHi_83885-1.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_OrHi_83885-1.jpg`}
 						alt="Indigenous fishing at Celilo Falls using traditional methods" 
 						class="w-full h-64 object-cover"
 					/>
@@ -112,7 +113,7 @@
 				<!-- Image 3: Fishing platforms -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_OrHi_65994_v105_i2_p_198.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_OrHi_65994_v105_i2_p_198.jpg`}
 						alt="Fishing platforms and structures at Celilo Falls" 
 						class="w-full h-64 object-cover"
 					/>
@@ -126,7 +127,7 @@
 				<!-- Image 4: Empty platforms -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/Celilo_Falls_empty_platforms_at_OrHi_65995__v105_i2_p_200.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_empty_platforms_at_OrHi_65995__v105_i2_p_200.jpg`}
 						alt="Empty fishing platforms at Celilo Falls during low water" 
 						class="w-full h-64 object-cover"
 					/>
@@ -140,7 +141,7 @@
 				<!-- Image 5: Fishing activity -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_ba018763.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_ba018763.jpg" 
 						alt="Active fishing scene at Celilo Falls showing traditional fishing methods" 
 						class="w-full h-64 object-cover"
 					/>
@@ -154,7 +155,7 @@
 				<!-- Image 6: Falls view -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src="/images/waterfalls/celilo-falls/OrHi_42687_Celilo_Falls_copy_4.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/OrHi_42687_Celilo_Falls_copy_4.jpg" 
 						alt="Another view of Celilo Falls showing the natural cascades" 
 						class="w-full h-64 object-cover"
 					/>

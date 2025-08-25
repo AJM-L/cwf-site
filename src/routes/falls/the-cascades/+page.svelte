@@ -2,6 +2,7 @@
 	import WaterfallMap from '$lib/WaterfallMap.svelte';
 	import { onMount } from 'svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 
 	const waterfalls = [
 		{ name: 'Ramona Falls', url: '/falls/the-cascades/ramona-falls', description: 'A delicate cascade over columnar basalt on Mount Hood' },
@@ -113,7 +114,7 @@
 					aria-label="Click to view topographic map in fullscreen mode"
 				>
 					<img 
-						src="/images/cascades/OE_Fig01_CascadeRange_Landsat_c1ayoSs.jpg" 
+						src={`${base}/images/cascades/OE_Fig01_CascadeRange_Landsat_c1ayoSs.jpg" 
 						alt="Cascade Range topographic map from Landsat imagery"
 						class="w-full object-contain"
 						style="max-height: 600px; min-height: 400px;"
@@ -162,7 +163,7 @@
 						</p>
 					</div>
 					<div class="flex flex-col items-center">
-						<img src="/images/cascades/mt-hood-ramona-falls.jpeg" alt="Mount Hood from Ramona Falls Trail" class="max-w-full h-auto rounded-lg">
+						<img src={`${base}/images/cascades/mt-hood-ramona-falls.jpeg" alt="Mount Hood from Ramona Falls Trail" class="max-w-full h-auto rounded-lg">
 					</div>
 				</div>
 			</div>
@@ -196,7 +197,7 @@
 						</p>
 					</div>
 					<div class="flex flex-col items-center">
-						<img src="/images/cascades/NorthernSpottedOwl.webp" alt="Northern Spotted Owl" class="max-w-full h-auto rounded-lg">
+						<img src={`${base}/images/cascades/NorthernSpottedOwl.webp" alt="Northern Spotted Owl" class="max-w-full h-auto rounded-lg">
 						<p class="text-xs text-gray-600 mt-2 text-center">Credit: NPS / Heather Jensen</p>
 					</div>
 				</div>
@@ -216,7 +217,7 @@
 						</p>
 					</div>
 					<div class="flex flex-col items-center">
-						<img src="/images/cascades/WhiteRiverFallsOR.jpg" alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
+						<img src={`${base}/images/cascades/WhiteRiverFallsOR.jpg" alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
 						<p class="text-xs text-gray-600 mt-2 text-center">Credit: By Cacophony, <a class="underline" href="https://commons.wikimedia.org/w/index.php?curid=2155637" target="_blank" rel="noopener">https://commons.wikimedia.org/w/index.php?curid=2155637</a></p>
 					</div>
 				</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	// import WaterfallMap from '$lib/WaterfallMap.svelte';
+	import { base } from '$app/paths';
 
 	const waterfalls = [
 		{ name: 'Ramona Falls', url: '/falls/the-cascades/ramona-falls', description: 'A delicate cascade over columnar basalt on Mount Hood' },
@@ -75,7 +76,7 @@
 				on:click={(e) => e.currentTarget.parentElement?.classList.toggle('fullscreen')}
 			>
 				<img 
-					src="/images/cascades/Cascade_Range_major_volcanoes_topographic_map-fr.svg" 
+					src={`${base}/images/cascades/Cascade_Range_major_volcanoes_topographic_map-fr.svg" 
 					alt="Topographic map of major Cascade Range volcanoes"
 					class="w-full object-cover"
 					style="max-height: 500px;"
@@ -160,7 +161,7 @@
 						</p>
 					</div>
 					<div class="flex flex-col items-center">
-						<img src="/images/cascades/WhiteRiverFallsOR.jpg" alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
+						<img src={`${base}/images/cascades/WhiteRiverFallsOR.jpg" alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
 						<p class="text-xs text-gray-600 mt-2 text-center">Credit: By Cacophony, <a class="underline" href="https://commons.wikimedia.org/w/index.php?curid=2155637" target="_blank" rel="noopener">https://commons.wikimedia.org/w/index.php?curid=2155637</a></p>
 					</div>
 				</div>

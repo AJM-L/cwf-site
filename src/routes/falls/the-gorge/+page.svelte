@@ -1,6 +1,8 @@
 <script lang="ts">
 	import WaterfallMap from '$lib/WaterfallMap.svelte';
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
+
 
 	const waterfalls = [
 		{ name: 'Bridal Veil Falls', url: '/falls/the-gorge/bridal-veil', description: 'A stunning two-tiered waterfall with rich industrial history' },
@@ -72,15 +74,15 @@
 		<div class="relative overflow-hidden rounded-lg mb-8">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
 				<div class="relative overflow-hidden rounded-lg shadow-lg group">
-					<img src="/images/the-gorge/COLUMBIA_RIVER_GORGE_BETWEEN_THE_DALLES_AND_THE_HOOD_RIVER_-_NARA_-_548143.jpg" alt="Historic view of Columbia River Gorge between The Dalles and Hood River" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+					<img src={`${base}/images/the-gorge/COLUMBIA_RIVER_GORGE_BETWEEN_THE_DALLES_AND_THE_HOOD_RIVER_-_NARA_-_548143.jpg" alt="Historic view of Columbia River Gorge between The Dalles and Hood River" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
 					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</div>
 				<div class="relative overflow-hidden rounded-lg shadow-lg group">
-					<img src="/images/the-gorge/Columbia_River_(201830373).jpeg" alt="Lush green vegetation in the Columbia River Gorge" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+					<img src={`${base}/images/the-gorge/Columbia_River_(201830373).jpeg`} alt="Lush green vegetation in the Columbia River Gorge" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
 					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</div>
 				<div class="relative overflow-hidden rounded-lg shadow-lg group">
-					<img src="/images/the-gorge/tree-and-river.jpeg" alt="Trees along the Columbia River" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+					<img src={`${base}/images/the-gorge/tree-and-river.jpeg`} alt="Trees along the Columbia River" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
 					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</div>
 			</div>
@@ -108,7 +110,7 @@
 						</div>
 					</div>
 					<div class="flex justify-center">
-						<img src="/images/the-gorge/rock.jpeg" alt="Basalt rock formations in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
+						<img src={`${base}/images/the-gorge/rock.jpeg`} alt="Basalt rock formations in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
 					</div>
 				</div>
 				<div class="pl-6">
@@ -133,7 +135,7 @@
 						</p>
 					</div>
 					<div class="flex justify-center">
-						<img src="/images/the-gorge/more-green.jpeg" alt="Lush vegetation showing the wet climate of the western Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
+						<img src={`${base}/images/the-gorge/more-green.jpeg`} alt="Lush vegetation showing the wet climate of the western Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
 					</div>
 				</div>
 			</div>
@@ -153,12 +155,12 @@
 						</p>
 					</div>
 					<div class="flex justify-center">
-						<img src="/images/the-gorge/tree-wall.jpeg" alt="Dense forest canopy in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
+						<img src={`${base}/images/the-gorge/tree-wall.jpeg`} alt="Dense forest canopy in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
 					</div>
 				</div>
 				<div class="grid md:grid-cols-2 gap-8 items-center pb-4 border-b border-gray-300">
 					<div class="flex justify-center md:order-first">
-						<img src="/images/the-gorge/9 arrowleaf balsamroot.jpg" alt="Arrowleaf balsamroot wildflowers in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
+						<img src={`${base}/images/the-gorge/9 arrowleaf balsamroot.jpg`} alt="Arrowleaf balsamroot wildflowers in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
 					</div>
 					<div>
 						<h3 class="text-lg font-bold text-black mb-3">Oak Savanna & Open Woodlands (Central–Eastern Gorge)</h3>
@@ -175,7 +177,7 @@
 						</p>
 					</div>
 					<div class="flex justify-center">
-						<img src="/images/the-gorge/eastern-gorge.jpg" alt="Native grasslands and vegetation in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
+						<img src={`${base}/images/the-gorge/eastern-gorge.jpg`} alt="Native grasslands and vegetation in the Columbia River Gorge" class="max-w-full h-auto rounded-lg shadow-lg">
 					</div>
 				</div>
 				<div class="border-b border-gray-300 pb-5">
@@ -203,14 +205,14 @@
 							</p>
 						</div>
 						<div class="flex justify-center">
-							<img src="/images/the-gorge/3 Chinook salmon.jpg" alt="Chinook salmon in the Columbia River Gorge" class="max-w-full h-auto">
+							<img src={`${base}/images/the-gorge/3 Chinook salmon.jpg`} alt="Chinook salmon in the Columbia River Gorge" class="max-w-full h-auto">
 						</div>
 					</div>
 				</div>
 				<div class="pb-4">
 					<div class="grid md:grid-cols-2 gap-6 items-center">
 						<div class="flex justify-center">
-							<img src="/images/the-gorge/NorthernSpottedOwl.jpg" alt="Northern Spotted Owl in the Columbia River Gorge" class="max-w-full h-auto">
+							<img src={`${base}/images/the-gorge/NorthernSpottedOwl.jpg`} alt="Northern Spotted Owl in the Columbia River Gorge" class="max-w-full h-auto">
 						</div>
 						<div>
 							<h3 class="text-lg font-bold text-black mb-2">Birds</h3>
@@ -231,7 +233,7 @@
 							</p>
 						</div>
 						<div class="flex justify-center">
-							<img src="/images/the-gorge/Deer_and_Pine_Tree-_Columbia_River_Gorge.jpg" alt="Deer and pine tree in the Columbia River Gorge" class="max-w-full h-auto">
+							<img src={`${base}/images/the-gorge/Deer_and_Pine_Tree-_Columbia_River_Gorge.jpg`} alt="Deer and pine tree in the Columbia River Gorge" class="max-w-full h-auto">
 						</div>
 					</div>
 				</div>
@@ -260,7 +262,7 @@
 	<section class="mb-12">
 		<div class="relative overflow-hidden mb-8">
 			<div class="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-gray-900/50"></div>
-			<img src="/images/waterfalls/latourell/Columbia_drainage_basin_blank_map.png" alt="Columbia River drainage basin" class="w-full h-64 object-cover">
+			<img src={`${base}/images/waterfalls/latourell/Columbia_drainage_basin_blank_map.png`} alt="Columbia River drainage basin" class="w-full h-64 object-cover">
 			<div class="absolute inset-0 flex items-center justify-center">
 				<div class="text-center text-white px-6">
 					<h2 class="text-3xl font-bold mb-4">Treaties and Dispossession</h2>

@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	
 	let currentImageIndex = 0;
 	const heroImages = [
-		'/images/waterfalls/willamette-falls/july_24/8R5A6290.jpeg',
-		'/images/waterfalls/silver-falls/my-photos/8R5A6143.jpeg',
-		'/images/waterfalls/bridal-veil/_R5A6008 (1).jpeg',
-		'/images/waterfalls/latourell/8R5A5911 (1).jpeg'
+		`${base}/images/waterfalls/willamette-falls/july_24/8R5A6290.jpeg`,
+		`${base}/images/waterfalls/silver-falls/my-photos/8R5A6143.jpeg`,
+		`${base}/images/waterfalls/bridal-veil/_R5A6008 (1).jpeg`,
+		`${base}/images/waterfalls/latourell/8R5A5911 (1).jpeg`
 	];
 
 	onMount(() => {
@@ -120,7 +121,7 @@
 				<!-- Conservation Image -->
 				<div class="relative">
 					<img 
-						src="/test-image.jpg" 
+						src={`${base}/test-image.jpg"
 						alt="Northern Spotted Owl" 
 						class="w-full aspect-[4/3] object-cover"
 					/>
@@ -149,7 +150,7 @@
 				<div class="group">
 					<div class="relative mb-6 overflow-hidden">
 						<img 
-							src="/images/waterfalls/silver-falls/my-photos/8R5A6199.jpeg" 
+							src={`${base}/images/waterfalls/silver-falls/my-photos/8R5A6199.jpeg"
 							alt="Silver Falls State Park" 
 							class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -176,7 +177,7 @@
 				<div class="group">
 					<div class="relative mb-6 overflow-hidden">
 						<img 
-							src="/images/the-gorge/3 Chinook salmon.jpg" 
+							src={`${base}/images/the-gorge/3 Chinook salmon.jpg"
 							alt="Chinook Salmon" 
 							class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -203,7 +204,7 @@
 				<div class="group">
 					<div class="relative mb-6 overflow-hidden">
 						<img 
-							src="/art/8R5A6313.jpeg" 
+							src={`${base}/art/8R5A6313.jpeg"
 							alt="oil painting of Willamette Falls" 
 							class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -244,7 +245,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src="/images/waterfalls/bridal-veil/cover.jpeg" 
+							src={`${base}/images/waterfalls/bridal-veil/cover.jpeg"
 							alt="Bridal Veil Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -273,7 +274,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src="/images/waterfalls/ramona-falls/falls/_R5A6262.jpeg" 
+							src={`${base}/images/waterfalls/ramona-falls/falls/_R5A6262.jpeg"
 							alt="Ramona Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>
@@ -302,7 +303,7 @@
 				<div class="bg-white overflow-hidden group">
 					<div class="relative overflow-hidden">
 						<img 
-							src="/images/waterfalls/willamette-falls/july_24/8R5A6298.jpeg" 
+							src={`${base}/images/waterfalls/willamette-falls/july_24/8R5A6298.jpeg"
 							alt="Willamette Falls" 
 							class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 						/>

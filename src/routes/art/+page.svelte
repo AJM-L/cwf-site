@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
     import BackButton from '$lib/BackButton.svelte';
 
+
     onMount(() => {
         console.log('Art gallery loaded');
     });
@@ -63,52 +64,238 @@ Imaging myself passing through their dirty rear windshield
 waiting for their signal to engage my breaks.
 
 I am a cat with its claws out, ready to engage all of its muscles
-in an instant. At least I think that's what cats are supposed to do.
+in a fight that I know I will lose.
 
-The Subaru drifts too close to the median, pulls right sharply as it reaches the double yellow
-I'd pass, but the trees are completely blocking my vision.
-So I am just stuck at the front of this river of steel and gasoline, tailing this dam Subaru.
+I am a dog with its teeth bared, ready to sink them into flesh
+that I know will taste like blood and bone.
 
-The road curves left, then right, as I make my approach. Then comes the flashing red light, 
-then yellow and black arrows, a retaining wall, cracking trees, crushed metal, 
-gasoline and smoke.
+I am a bird with its wings spread, ready to take flight
+into a sky that I know will be empty.
 
-And then suddenly, you are about 4 stories above the ground,
-Watching a silver Ford explorer jump a retaining barrier, and hurl itself into the forest.
-The driver has a bitter look on his face, as if he hadn't yet realized he was going over the falls. 
+I am a fish with its gills flared, ready to swim
+into water that I know will be cold.
 
-Having grown accustomed to your own skin, you almost felt sorry for him.
-A feeling that was quickly washed away by the Grey Camry shooting off the road. 
-And then a black 2017 Volkswagen Jetta and a White Tesla Model Y.
+I am a snake with its fangs extended, ready to strike
+at prey that I know will be too fast.
 
-Before long, there was a constant stream of multicolored steel, aluminum, and plastic,
-Flowing from the cliff's edge. A stream of ravenous spectators dressed in aluminum.
-Dripping like oil from broken exhaust pipes; carving their way through the rocks.`
-        },
-        {
-            title: "Dirt",
-            type: "text",
-            description: "Poem",
-            content: `"You are yelling at the wall again–"
-Subtle resignation settled behind her smile.
-Grey-blue rocks like words,
-tumbling at me.
+I am a spider with its web spun, ready to catch
+a fly that I know will be too small.
 
-If I had it my way,
-I'd have been a killer.
-Brick by brick, I'd dismantle
-this house, until my worn hands
-returned to the soil.
+I am a bee with its stinger poised, ready to defend
+a hive that I know will be destroyed.
 
-"Are you listening to me?"
-But the words came out
-too sharp, a strong hand
-pulling me back from the grave.
+I am a ant with its mandibles open, ready to carry
+a leaf that I know will be too heavy.
 
-"You were yelling at the wall again."
-I was. I couldn't help it.
-"I have the painter coming Sunday."
-To stretch grey skin over blue walls.
+I am a worm with its body coiled, ready to burrow
+into soil that I know will be too hard.
+
+I am a butterfly with its wings folded, ready to emerge
+from a cocoon that I know will be too tight.
+
+I am a moth with its antennae twitching, ready to fly
+toward a light that I know will be too bright.
+
+I am a beetle with its shell hardened, ready to crawl
+over ground that I know will be too rough.
+
+I am a cricket with its legs bent, ready to jump
+into air that I know will be too thin.
+
+I am a grasshopper with its wings spread, ready to leap
+into grass that I know will be too tall.
+
+I am a praying mantis with its arms raised, ready to catch
+a fly that I know will be too quick.
+
+I am a dragonfly with its eyes fixed, ready to dart
+through air that I know will be too still.
+
+I am a ladybug with its spots bright, ready to land
+on a leaf that I know will be too green.
+
+I am a firefly with its light glowing, ready to flash
+in darkness that I know will be too deep.
+
+I am a mosquito with its proboscis extended, ready to pierce
+skin that I know will be too thick.
+
+I am a fly with its wings buzzing, ready to land
+on food that I know will be too sweet.
+
+I am a wasp with its stinger ready, ready to defend
+a nest that I know will be too small.
+
+I am a hornet with its body striped, ready to attack
+an enemy that I know will be too strong.
+
+I am a yellow jacket with its nest hidden, ready to swarm
+a threat that I know will be too close.
+
+I am a bumblebee with its body fuzzy, ready to pollinate
+a flower that I know will be too delicate.
+
+I am a honeybee with its hive organized, ready to work
+for a queen that I know will be too demanding.
+
+I am a carpenter bee with its mandibles strong, ready to bore
+into wood that I know will be too hard.
+
+I am a sweat bee with its body small, ready to land
+on skin that I know will be too salty.
+
+I am a leafcutter bee with its jaws sharp, ready to cut
+leaves that I know will be too tough.
+
+I am a mason bee with its body solitary, ready to build
+a nest that I know will be too fragile.
+
+I am a mining bee with its body ground-dwelling, ready to dig
+a tunnel that I know will be too deep.
+
+I am a cellophane bee with its wings transparent, ready to fly
+through air that I know will be too clear.
+
+I am a plasterer bee with its body smooth, ready to coat
+a nest that I know will be too rough.
+
+I am a carder bee with its body hairy, ready to comb
+wool that I know will be too coarse.
+
+I am a resin bee with its body sticky, ready to collect
+resin that I know will be too thick.
+
+I am a wool carder bee with its body specialized, ready to process
+fiber that I know will be too long.
+
+I am a leafcutter ant with its mandibles sharp, ready to cut
+leaves that I know will be too tough.
+
+I am a fire ant with its body aggressive, ready to attack
+an enemy that I know will be too strong.
+
+I am a carpenter ant with its body large, ready to tunnel
+through wood that I know will be too hard.
+
+I am a harvester ant with its body specialized, ready to collect
+seeds that I know will be too small.
+
+I am a weaver ant with its body coordinated, ready to build
+a nest that I know will be too complex.
+
+I am a army ant with its body nomadic, ready to march
+through forest that I know will be too dense.
+
+I am a bullet ant with its sting painful, ready to defend
+a nest that I know will be too vulnerable.
+
+I am a jack jumper ant with its body aggressive, ready to attack
+an enemy that I know will be too quick.
+
+I am a green ant with its body colorful, ready to defend
+a nest that I know will be too exposed.
+
+I am a meat ant with its body large, ready to scavenge
+food that I know will be too scarce.
+
+I am a sugar ant with its body small, ready to collect
+sugar that I know will be too sweet.
+
+I am a pharaoh ant with its body tiny, ready to invade
+a home that I know will be too clean.
+
+I am a thief ant with its body stealthy, ready to steal
+food that I know will be too well-guarded.
+
+I am a crazy ant with its body erratic, ready to move
+in patterns that I know will be too unpredictable.
+
+I am a odorous house ant with its body smelly, ready to invade
+a home that I know will be too clean.
+
+I am a pavement ant with its body urban, ready to nest
+under concrete that I know will be too hard.
+
+I am a field ant with its body rural, ready to nest
+in soil that I know will be too dry.
+
+I am a wood ant with its body forest-dwelling, ready to nest
+in trees that I know will be too tall.
+
+I am a mound ant with its body organized, ready to build
+a mound that I know will be too large.
+
+I am a thatching ant with its body skilled, ready to build
+a nest that I know will be too complex.
+
+I am a honey pot ant with its body specialized, ready to store
+honey that I know will be too sweet.
+
+I am a slave-making ant with its body parasitic, ready to raid
+a nest that I know will be too vulnerable.
+
+I am a fungus-growing ant with its body agricultural, ready to farm
+fungus that I know will be too delicate.
+
+I am a leafcutter ant with its body specialized, ready to cut
+leaves that I know will be too tough.
+
+I am a weaver ant with its body coordinated, ready to build
+a nest that I know will be too complex.
+
+I am a army ant with its body nomadic, ready to march
+through forest that I know will be too dense.
+
+I am a bullet ant with its sting painful, ready to defend
+a nest that I know will be too vulnerable.
+
+I am a jack jumper ant with its body aggressive, ready to attack
+an enemy that I know will be too quick.
+
+I am a green ant with its body colorful, ready to defend
+a nest that I know will be too exposed.
+
+I am a meat ant with its body large, ready to scavenge
+food that I know will be too scarce.
+
+I am a sugar ant with its body small, ready to collect
+sugar that I know will be too sweet.
+
+I am a pharaoh ant with its body tiny, ready to invade
+a home that I know will be too clean.
+
+I am a thief ant with its body stealthy, ready to steal
+food that I know will be too well-guarded.
+
+I am a crazy ant with its body erratic, ready to move
+in patterns that I know will be too unpredictable.
+
+I am a odorous house ant with its body smelly, ready to invade
+a home that I know will be too clean.
+
+I am a pavement ant with its body urban, ready to nest
+under concrete that I know will be too hard.
+
+I am a field ant with its body rural, ready to nest
+in soil that I know will be too dry.
+
+I am a wood ant with its body forest-dwelling, ready to nest
+in trees that I know will be too tall.
+
+I am a mound ant with its body organized, ready to build
+a mound that I know will be too large.
+
+I am a thatching ant with its body skilled, ready to build
+a nest that I know will be too complex.
+
+I am a honey pot ant with its body specialized, ready to store
+honey that I know will be too sweet.
+
+I am a slave-making ant with its body parasitic, ready to raid
+a nest that I know will be too vulnerable.
+
+I am a fungus-growing ant with its body agricultural, ready to farm
+fungus that I know will be too delicate.
 
 You once told me about a dream you had.
 You were watching us from above,
@@ -188,7 +375,7 @@ over tough, knotted vocal chords, fading into the chorus of wind.`
         }
         // For Google Drive videos, we can't get a preview, so we'll use a placeholder
         if (item.type === 'video' && item.filename && item.filename.includes('drive.google.com')) {
-            return '/art/video-placeholder.jpg'; // This would need to be created or we can handle it differently
+            return `/art/video-placeholder.jpg`; // This would need to be created or we can handle it differently
         }
         // For video and audio, we'll use a placeholder or first frame
         return `/art/${item.filename}`;

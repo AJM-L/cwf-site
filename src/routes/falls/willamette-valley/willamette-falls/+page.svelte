@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackButton from '$lib/BackButton.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
 			<h1>Understanding Willamette Falls</h1>
 			
 			<figure class="my-8">
-				<img src="/images/waterfalls/willamette-falls/optimized/Willamette_Falls_Panorama_Aerial_View.webp" alt="Aerial photograph of Willamette Falls" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/Willamette_Falls_Panorama_Aerial_View.webp" alt="Aerial photograph of Willamette Falls" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">
 					<span class="italic">Photo credit: <a href="https://commons.wikimedia.org/w/index.php?title=User:Natotornado789&action=edit&redlink=1" target="_blank" rel="noopener noreferrer">Natotornado789</a></span>
 				</figcaption>
@@ -32,7 +33,7 @@
 			<h3>The Ancient Landscape</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/8R5A6297.webp" alt="Geological view of Willamette Falls" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6297.webp" alt="Geological view of Willamette Falls" class="w-full rounded-lg shadow-lg" />
 			</figure>
 
 			<p>The geological story of Willamette Falls begins approximately 15 million years ago during the Miocene epoch, when massive flood basalts of the Columbia River Basalt Group covered vast areas of the Pacific Northwest. The falls occur where the Willamette River crosses the uppermost flood basalt sheet of the Sentinel Bluffs Member of the Grande Ronde Basalt. The Bolton Fault, a significant geological feature in the area, may have served as the starting point for the falls' formation, creating the escarpment that the river now cascades over.</p>
@@ -40,7 +41,7 @@
 			<h3>The Ice Age Floods: Sculpting the Landscape</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/missoula_floods_nps.webp" alt="Map showing the extent of Glacial Lake Missoula and flood paths" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/missoula_floods_nps.webp" alt="Map showing the extent of Glacial Lake Missoula and flood paths" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Area impacted by Glacial Lake Missoula and the Floods from NPS</figcaption>
 			</figure>
 
@@ -55,7 +56,7 @@
 			<h3>The First Peoples of Willamette Falls</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/Indians-Fish-Willamette-Falls-FSDM2.webp" alt="Historical illustration of Native fishing platforms at the falls" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/Indians-Fish-Willamette-Falls-FSDM2.webp" alt="Historical illustration of Native fishing platforms at the falls" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Historical illustration of Native fishing platforms at Willamette Falls, circa 1800s</figcaption>
 			</figure>
 
@@ -66,7 +67,7 @@
 			<h3>Economic and Social Hub</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/salmon_jumping_ralph_eddy_53943.webp" alt="Salmon jumping up Willamette Falls" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/salmon_jumping_ralph_eddy_53943.webp" alt="Salmon jumping up Willamette Falls" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Salmon jumping up Willamette Falls</figcaption>
 			</figure>
 
@@ -81,7 +82,7 @@
 			<h3>Catastrophic Decline and Forced Removal</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/paul_kane_65600.webp" alt="Willamette Falls sketch by Paul Kane" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/paul_kane_65600.webp" alt="Willamette Falls sketch by Paul Kane" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Willamette Falls, sketch by Paul Kane in about 1846. Courtesy Oreg. Hist.</figcaption>
 			</figure>
 
@@ -108,7 +109,7 @@
 			<h3>Early Industrial Development</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/west_linn_left_oc_on_roght_crown_zellerbach_mill_66102.webp" alt="Aerial photo of Willamette Falls industrial development" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/west_linn_left_oc_on_roght_crown_zellerbach_mill_66102.webp" alt="Aerial photo of Willamette Falls industrial development" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Aerial photo from Oreg. Hist. Soc.</figcaption>
 			</figure>
 
@@ -125,7 +126,7 @@
 			<h3>Pioneering Hydroelectric Development</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/early_electric_power_facility_c1890_006684_s.webp" alt="Early electric power facility" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/early_electric_power_facility_c1890_006684_s.webp" alt="Early electric power facility" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Early electric power facility on Willamette Falls, c. 1890. Courtesy Oreg. Hist. Soc. Research Library, 006684</figcaption>
 			</figure>
 
@@ -136,7 +137,7 @@
 			<h3>The Paper Mill Era</h3>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/willamette_pulp_and_paper_co_and_crown_paper_005755_s.webp" alt="Willamette Pulp and Power and Crown Paper mills" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/willamette_pulp_and_paper_co_and_crown_paper_005755_s.webp" alt="Willamette Pulp and Power and Crown Paper mills" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">Willamette Pulp and Power and Crown Paper. Courtesy Oreg. Hist. Soc. Research Library, 005755</figcaption>
 			</figure>
 
@@ -179,7 +180,7 @@
 			<h2>Tumwata Village</h2>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/8R5A6067.webp" alt="Tumwata village site" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6067.webp" alt="Tumwata village site" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">The tumwata village site showing ongoing restoration work</figcaption>
 			</figure>
 
@@ -220,7 +221,7 @@
 			<h2>Future of the Project</h2>
 
 			<figure class="my-6">
-				<img src="/images/waterfalls/willamette-falls/optimized/8R5A6290.webp" alt="View of Willamette Falls" class="w-full rounded-lg shadow-lg" />
+				<img src={`${base}/images/waterfalls/willamette-falls/optimized/8R5A6290.webp" alt="View of Willamette Falls" class="w-full rounded-lg shadow-lg" />
 				<figcaption class="text-sm text-gray-600 mt-2">View of the falls from PGE facility</figcaption>
 			</figure>
 
