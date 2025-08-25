@@ -9,8 +9,11 @@
 		// Remove trailing slash if present
 		const path = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
 		
+		// Remove base path from current path for processing
+		const pathWithoutBase = base ? path.replace(base, '') : path;
+		
 		// Split path into segments
-		const segments = path.split('/').filter(segment => segment !== '');
+		const segments = pathWithoutBase.split('/').filter(segment => segment !== '');
 		
 		// Handle different page types
 		if (segments.length === 0) {
@@ -47,7 +50,9 @@
 	
 	function getBackLabel(currentPath: string): string {
 		const path = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
-		const segments = path.split('/').filter(segment => segment !== '');
+		// Remove base path from current path for processing
+		const pathWithoutBase = base ? path.replace(base, '') : path;
+		const segments = pathWithoutBase.split('/').filter(segment => segment !== '');
 		
 		if (segments.length === 0) return '';
 		
