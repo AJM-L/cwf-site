@@ -141,7 +141,7 @@
 				<!-- Image 5: Fishing activity -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_ba018763.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/Celilo_Falls_fishing_at_ba018763.jpg`} 
 						alt="Active fishing scene at Celilo Falls showing traditional fishing methods" 
 						class="w-full h-64 object-cover"
 					/>
@@ -155,7 +155,7 @@
 				<!-- Image 6: Falls view -->
 				<div class="bg-gray-50 rounded-lg overflow-hidden">
 					<img 
-						src={`${base}/images/waterfalls/celilo-falls/OrHi_42687_Celilo_Falls_copy_4.jpg" 
+						src={`${base}/images/waterfalls/celilo-falls/OrHi_42687_Celilo_Falls_copy_4.jpg`} 
 						alt="Another view of Celilo Falls showing the natural cascades" 
 						class="w-full h-64 object-cover"
 					/>
