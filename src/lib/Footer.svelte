@@ -12,12 +12,12 @@
 			<div class="md:col-span-2">
 				<h3 class="text-white text-lg font-medium mb-4">Columbia River Watershed</h3>
 				<p class="text-slate-400 mb-4 leading-relaxed">
-					Documenting the waterfalls, ecosystems, and conservation efforts of the Pacific Northwest's most vital watershed.
+					Documenting the waterfalls, ecosystems, and stewardship efforts of the Pacific Northwest's most vital watershed.
 				</p>
 				<div class="flex space-x-4">
-					<a href={`${base}/conservation`} class="text-slate-400 hover:text-white transition-colors duration-200">
-						Conservation
-					</a>
+									<a href={`${base}/stewardship`} class="text-slate-400 hover:text-white transition-colors duration-200">
+					Stewardship
+				</a>
 					<a href={`${base}/falls`} class="text-slate-400 hover:text-white transition-colors duration-200">
 						Waterfalls
 					</a>
@@ -41,7 +41,7 @@
 			<div>
 				<h4 class="text-white font-medium mb-4">About</h4>
 				<ul class="space-y-2 text-sm">
-					<li><a href={`${base}/conservation`} class="text-slate-400 hover:text-white transition-colors duration-200">Conservation Efforts</a></li>
+					<li><a href={`${base}/stewardship`} class="text-slate-400 hover:text-white transition-colors duration-200">Stewardship Efforts</a></li>
 					<li><a href={`${base}/art`} class="text-slate-400 hover:text-white transition-colors duration-200">Art Collection</a></li>
 					<li><a href={`${base}/falls`} class="text-slate-400 hover:text-white transition-colors duration-200">Waterfalls</a></li>
 				</ul>

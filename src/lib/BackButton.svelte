@@ -74,7 +74,7 @@
 			if (segments.length === 3) return '← Back to Excellence';
 		}
 		
-		if (segments[0] === 'conservation') {
+		if (segments[0] === 'conservation' || segments[0] === 'stewardship') {
 			return '← Back to Home';
 		}
 		

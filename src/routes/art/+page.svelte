@@ -408,7 +408,7 @@ over tough, knotted vocal chords, fading into the chorus of wind.`
                                 window.open(item.filename, '_blank');
                             } else {
                                 // Open local video in a new tab with video player
-                                const videoUrl = `/art/${item.filename}`;
+                                const videoUrl = `${base}/art/${item.filename}`;
                                 const newWindow = window.open('', '_blank');
                                 if (newWindow) {
                                     newWindow.document.write(`
@@ -484,7 +484,7 @@ over tough, knotted vocal chords, fading into the chorus of wind.`
                             }
                         } else {
                             // For images and audio, open directly
-                            window.open(`/art/${item.filename}`, '_blank');
+                            window.open(`${base}/art/${item.filename}`, '_blank');
                         }
                     }}
                 >

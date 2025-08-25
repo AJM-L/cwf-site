@@ -19,8 +19,8 @@
 </script>
 
 <svelte:head>
-	<title>Conservation - Columbia River Watershed</title>
-	<meta name="description" content="Learn about conservation organizations working to protect the Columbia River Watershed and its diverse ecosystems." />
+	<title>Stewardship - Columbia River Watershed</title>
+	<meta name="description" content="Learn about stewardship organizations working to protect the Columbia River Watershed and its diverse ecosystems." />
 </svelte:head>
 
 <div class="min-h-screen bg-white">
@@ -28,10 +28,10 @@
 	<div class="relative py-24 bg-slate-50">
 		<div class="max-w-6xl mx-auto px-6 text-center">
 			<h1 class="text-4xl md:text-5xl font-light text-slate-900 mb-6 tracking-tight leading-tight">
-				Conservation Organizations
+				Environmental Protection and Stewardship Organizations
 			</h1>
 			<p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-				Organizations working to protect and restore the Columbia River Watershed through research, advocacy, and direct conservation action.
+				Organizations working to protect and restore the Columbia River Watershed through research, advocacy, and direct action.
 			</p>
 		</div>
 	</div>
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 
-	<!-- Conservation Organizations Grid -->
+	<!-- Stewardship Organizations Grid -->
 	<div class="py-24 bg-white">
 		<div class="max-w-6xl mx-auto px-6">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -169,10 +169,10 @@
 				<!-- Content -->
 				<div>
 					<h2 class="text-3xl md:text-4xl font-light text-slate-900 mb-6 leading-tight">
-						Collective Conservation Impact
+						Collective Impact
 					</h2>
 					<p class="text-slate-600 mb-8 leading-relaxed text-lg">
-						The health of the Columbia River Watershed depends on coordinated efforts between organizations, communities, and individuals working toward shared conservation goals.
+						The health of the Columbia River Watershed depends on coordinated efforts between organizations, communities, and individuals working toward shared environmental goals.
 					</p>
 					<div class="space-y-6 mb-8">
 						<div class="flex items-start gap-4">
@@ -225,10 +225,10 @@
 	<div class="py-24 bg-slate-900">
 		<div class="max-w-4xl mx-auto px-6 text-center">
 			<h2 class="text-3xl md:text-4xl font-light text-white mb-6 leading-tight">
-				Participate in Conservation
+				Participate in Stewardship
 			</h2>
 			<p class="text-slate-300 mb-12 leading-relaxed text-lg max-w-3xl mx-auto">
-				Conservation success requires the participation of individuals, communities, and organizations working together toward shared environmental goals.
+				The success of environmental protection and stewardship requires the participation of individuals, communities, and organizations working together toward shared environmental goals.
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<div class="text-center">
@@ -247,7 +247,7 @@
 						</svg>
 					</div>
 					<h3 class="text-lg font-medium text-white mb-2">Support</h3>
-					<p class="text-slate-400 text-sm leading-relaxed">Provide financial support to conservation organizations.</p>
+					<p class="text-slate-400 text-sm leading-relaxed">Provide financial support to stewardship organizations.</p>
 				</div>
 				<div class="text-center">
 					<div class="w-12 h-12 bg-slate-700 mx-auto mb-4 flex items-center justify-center">

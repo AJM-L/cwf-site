@@ -21,7 +21,7 @@
 
 <svelte:head>
 	<title>Columbia River Watershed - CWF</title>
-	<meta name="description" content="Explore the majestic waterfalls, diverse ecosystems, and conservation efforts of the Pacific Northwest's most iconic watershed." />
+	<meta name="description" content="Explore the majestic waterfalls, diverse ecosystems, and stewardship efforts of the Pacific Northwest's most iconic watershed." />
 </svelte:head>
 
 <div class="min-h-screen bg-white">
@@ -47,14 +47,14 @@
 				Columbia River Watershed
 			</h1>
 			<p class="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-3xl mx-auto">
-				Documenting the waterfalls, ecosystems, and conservation efforts of the Pacific Northwest's most vital watershed.
+				Documenting the waterfalls, ecosystems, and stewardship efforts of the Pacific Northwest's most vital watershed.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-3 justify-center">
 				<a 
-					href={`${base}/conservation`}
+					href={`${base}/stewardship`}
 					class="bg-slate-800 hover:bg-slate-900 text-white px-8 py-3 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 				>
-					Conservation
+					Stewardship
 				</a>
 				<a 
 					href={`${base}/falls`}
@@ -72,17 +72,17 @@
 		</div>
 	</div>
 
-	<!-- Conservation Section -->
+	<!-- Stewardship Section -->
 	<div class="py-24 bg-slate-50">
 		<div class="max-w-6xl mx-auto px-6">
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-				<!-- Conservation Content -->
+				<!-- Stewardship Content -->
 				<div>
 					<h2 class="text-3xl md:text-4xl font-light text-slate-900 mb-6 leading-tight">
 						Protecting Our Watershed
 					</h2>
 					<p class="text-slate-600 mb-8 leading-relaxed text-lg">
-						The Columbia River Watershed faces unprecedented challenges from climate change, habitat loss, and human development. Critical conservation efforts are underway to preserve this vital ecosystem.
+						The Columbia River Watershed faces unprecedented challenges from climate change, habitat loss, and human development. Critical stewardship efforts are underway to preserve this vital ecosystem.
 					</p>
 					<div class="space-y-6 mb-8">
 						<div class="flex items-start gap-4">
@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<a 
-						href={`${base}/conservation`}
+						href={`${base}/stewardship`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-sm font-medium tracking-wide uppercase transition-colors duration-200"
 					>
 						Learn More
@@ -118,7 +118,7 @@
 					</a>
 				</div>
 
-				<!-- Conservation Image -->
+				<!-- Stewardship Image -->
 				<div class="relative">
 					<img 
 						src={`${base}/test-image.jpg`}
@@ -141,7 +141,7 @@
 					Explore the Watershed
 				</h2>
 				<p class="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
-					Discover the natural and cultural heritage of this remarkable region through waterfalls, conservation efforts, and artistic interpretations.
+					Discover the natural and cultural heritage of this remarkable region through waterfalls, stewardship efforts, and artistic interpretations.
 				</p>
 			</div>
 
@@ -173,7 +173,7 @@
 					</a>
 				</div>
 
-				<!-- Conservation -->
+				<!-- Stewardship -->
 				<div class="group">
 					<div class="relative mb-6 overflow-hidden">
 						<img 
@@ -185,12 +185,12 @@
 							Chinook Salmon
 						</div>
 					</div>
-					<h3 class="text-xl font-light text-slate-900 mb-3">Conservation</h3>
+					<h3 class="text-xl font-light text-slate-900 mb-3">Stewardship</h3>
 					<p class="text-slate-600 mb-6 leading-relaxed text-sm">
-						Learn about ongoing conservation initiatives protecting the watershed's biodiversity, water quality, and ecosystem health.
+						Learn about ongoing stewardship initiatives protecting the watershed's biodiversity, water quality, and ecosystem health.
 					</p>
 					<a 
-						href={`${base}/conservation`}
+						href={`${base}/stewardship`}
 						class="inline-flex items-center text-slate-900 border-b border-slate-300 hover:border-slate-600 pb-1 text-xs font-medium tracking-wider uppercase transition-colors duration-200"
 					>
 						Learn More
@@ -335,14 +335,14 @@
 	<div class="py-20 bg-slate-900">
 		<div class="max-w-4xl mx-auto px-6 text-center">
 			<h2 class="text-2xl md:text-3xl font-light text-white mb-4">
-				Conservation
+				Stewardship
 			</h2>
 			<p class="text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
 				Join efforts to protect and preserve the Columbia River Watershed for future generations through research, advocacy, and direct action.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-3 justify-center">
 				<a 
-					href={`${base}/conservation`}
+					href={`${base}/stewardship`}
 					class="bg-white text-slate-900 px-8 py-3 text-sm font-medium tracking-wide uppercase hover:bg-slate-100 transition-colors duration-200"
 				>
 					Get Involved
