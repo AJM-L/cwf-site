@@ -335,7 +335,7 @@
 	<div class="py-20 bg-slate-900">
 		<div class="max-w-4xl mx-auto px-6 text-center">
 			<h2 class="text-2xl md:text-3xl font-light text-white mb-4">
-				Conservation Through Documentation
+				Conservation and Art
 			</h2>
 			<p class="text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
 				Join efforts to protect and preserve the Columbia River Watershed for future generations through research, advocacy, and direct action.
