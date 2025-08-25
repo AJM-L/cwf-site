@@ -161,7 +161,7 @@
 						</p>
 					</div>
 					<div class="flex flex-col items-center">
-						<img src={`${base}/images/cascades/WhiteRiverFallsOR.jpg" alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
+						<img src={`${base}/images/cascades/WhiteRiverFallsOR.jpg`} alt="White River Falls, Oregon" class="max-w-full h-auto rounded-lg">
 						<p class="text-xs text-gray-600 mt-2 text-center">Credit: By Cacophony, <a class="underline" href="https://commons.wikimedia.org/w/index.php?curid=2155637" target="_blank" rel="noopener">https://commons.wikimedia.org/w/index.php?curid=2155637</a></p>
 					</div>
 				</div>
