@@ -14,7 +14,7 @@ const config = {
 			strict: false
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/cwf-website' : ''
+			base: process.env.NODE_ENV === 'production' ? '/cwf-site' : ''
 		}
 	}
 };
