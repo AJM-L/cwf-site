@@ -1,0 +1,63 @@
+
+# Willamette Basin, Oregon
+
+
+## URL
+https://databasin.org/datasets/3fcafe2eb73a4db19f6ee05c894def4c
+
+
+## Dataset Type
+ArcGIS
+
+
+## Credits
+Derived from the USGS Watershed Boundary Dataset
+
+  
+
+[https://nhd.usgs.gov/wbd.html](https://nhd.usgs.gov/wbd.html)
+
+
+## Uploaded By
+[Katie O&#39;Connor](https://databasin.org/people/k8latte)
+
+
+## Description
+The Willamette Basin boundary was selected from the HUC 4 boundaries within the USGS Watershed Boundary Dataset.  More information about the WBD can be found at:
+[https://nhd.usgs.gov/wbd.html](https://nhd.usgs.gov/wbd.html)
+
+
+## Use Constraints
+This work is licensed under a  Creative Commons Attribution 3.0 License .
+
+
+### Data Basin Metadata
+metadata/metadata1.xml
+
+
+### Data Files
+WillametteBasin.lpk
+
+
+
+### Attribute Data
+
+AREAACRES    AREAACRES    AREAACRES    
+AREASQKM    AREASQKM    AREASQKM    
+FID    FID    FID    
+GLOBALID    GLOBALID    GLOBALID    
+GNIS_ID    GNIS_ID    GNIS_ID    
+HUC4    HUC4    HUC4    
+LOADDATE    LOADDATE    LOADDATE    
+METASOURCE    METASOURCE    METASOURCE    
+NAME    NAME    NAME    
+OBJECTID    OBJECTID    OBJECTID    
+Shape    Shape    Shape    
+SHAPE_Area    SHAPE_Area    SHAPE_Area    
+SHAPE_Leng    SHAPE_Leng    SHAPE_Leng    
+SOURCEDATA    SOURCEDATA    SOURCEDATA    
+SOURCEFEAT    SOURCEFEAT    SOURCEFEAT    
+SOURCEORIG    SOURCEORIG    SOURCEORIG    
+STATES    STATES    STATES    
+TNMID    TNMID    TNMID    
+

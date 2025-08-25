@@ -1,0 +1,7 @@
+
+> cwf-website@0.0.1 dev
+> vite dev --port 3000
+
+error when starting dev server:
+Could not load /Users/ajmatheson-lieber/Desktop/CWF/CWF-Website/cwf-website/svelte.config.js: Unexpected option config.kit.ssr
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Count Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        #info-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            font-size: 14px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 300px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        #info-panel.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .species-info {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .species-name {
+            display: flex;
+            align-items: center;
+        }
+        
+        .color-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+        }
+        
+        .particle-count {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-left: 10px;
+            min-width: 60px;
+            text-align: right;
+        }
+        
+        .stats-section {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .controls-section {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 12px;
+            opacity: 0.7;
+        }
+        
+        .fish-name-clickable {
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        
+        .fish-name-clickable:hover {
+            color: #87CEEB;
+            text-decoration: underline;
+        }
+        
+        /* Fish Info Popup Styles */
+        .fish-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .fish-popup.visible {
+            display: flex;
+        }
+        
+        .fish-popup-content {
+            background: rgba(0, 0, 0, 0.95);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow-y: auto;
+            color: white;
+            text-align: center;
+        }
+        
+        .fish-popup img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        
+        .fish-popup h2 {
+            margin: 0 0 15px 0;
+            color: #87CEEB;
+        }
+        
+        .fish-popup p {
+            margin: 10px 0;
+            line-height: 1.5;
+            text-align: left;
+        }
+        
+        .close-popup {
+            background: #444;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        .close-popup:hover {
+            background: #666;
+        }
+        
+        /* Speed Control Panel Styles */
+        #speed-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            color: white;
+            font-size: 13px;
+            min-width: 180px;
+        }
+        
+        #speed-panel h4 {
+            margin: 0 0 10px 0;
+            color: #87CEEB;
+            font-size: 14px;
+        }
+        
+        .speed-controls {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .speed-btn {
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 4px;
+            padding: 5px 8px;
+            cursor: pointer;
+            font-size: 11px;
+            transition: all 0.2s ease;
+        }
+        
+        .speed-btn:hover {
+            background: #555;
+        }
+        
+        .speed-btn.active {
+            background: #87CEEB;
+            color: #000;
+            border-color: #87CEEB;
+        }
+        
+        .speed-info {
+            margin-bottom: 8px;
+            color: #ccc;
+            font-size: 12px;
+        }
+        
+        .speed-shortcuts {
+            font-size: 10px;
+            opacity: 0.7;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="info-panel">
+        <h3 style="margin: 0 0 10px 0; color: #fff;">Migration Seasons</h3>
+        
+        <div style="font-size: 13px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+            <strong>Year: <span id="current-year">1971</span></strong><br>
+            <strong>Month: <span id="current-month">March</span></strong>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #FFB3D9;"></div>
+                <span class="fish-name-clickable" data-fish="spring-chinook">Spring Chinook (Mar-Jul)</span>
+            </div>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #B3E5D1;"></div>
+                <span class="fish-name-clickable" data-fish="fall-chinook">Fall Chinook (Aug-Sep)</span>
+            </div>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #D1C4E9;"></div>
+                <span class="fish-name-clickable" data-fish="coho">Coho (Aug-Nov)</span>
+            </div>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #FFCC99;"></div>
+                <span class="fish-name-clickable" data-fish="winter-steelhead">Winter Steelhead (Feb-May, Dec-Jan)</span>
+            </div>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #B3D9FF;"></div>
+                <span class="fish-name-clickable" data-fish="summer-steelhead">Summer Steelhead (Mar-Oct)</span>
+            </div>
+        </div>
+        
+        <div class="species-info">
+            <div class="species-name">
+                <div class="color-dot" style="background-color: #E6E6FA;"></div>
+                <span class="fish-name-clickable" data-fish="lamprey">Pacific Lamprey (Uncounted)</span>
+            </div>
+        </div>
+        
+        <div style="font-size: 11px; opacity: 0.7; margin-top: 10px;">
+            <strong>Each dot = 50 fish</strong><br>
+            Press SPACEBAR to toggle this legend<br>
+            Click fish names for more info<br>
+            Use [-/+] keys to adjust speed
+        </div>
+    </div>
+
+    <!-- Speed Control Panel -->
+    <div id="speed-panel">
+        <h4>Animation Speed</h4>
+        <div class="speed-controls">
+            <button class="speed-btn" onclick="setSpeed(0.25)">0.25x</button>
+            <button class="speed-btn" onclick="setSpeed(0.5)">0.5x</button>
+            <button class="speed-btn active" onclick="setSpeed(1)">1x</button>
+            <button class="speed-btn" onclick="setSpeed(2)">2x</button>
+            <button class="speed-btn" onclick="setSpeed(4)">4x</button>
+        </div>
+        <div class="speed-info">
+            <span id="current-speed">1x</span> speed<br>
+            <span id="year-duration">12</span>s per year
+        </div>
+        <div class="speed-shortcuts">
+            [-/+] keys or [1-5] numbers<br>
+            Click buttons to adjust speed
+        </div>
+    </div>
+
+    <!-- Fish Information Popups -->
+    <div id="fish-popup" class="fish-popup" onclick="closeFishPopup()">
+        <div class="fish-popup-content" onclick="event.stopPropagation()">
+            <h2 id="popup-title">Fish Information</h2>
+            <img id="popup-image" src="" alt="Fish Image">
+            <div id="popup-description"></div>
+            <button class="close-popup" onclick="closeFishPopup()">Close</button>
+        </div>
+    </div>
+    
+    <script src="animation.js?v=20250603"></script>
+</body>
+</html> 

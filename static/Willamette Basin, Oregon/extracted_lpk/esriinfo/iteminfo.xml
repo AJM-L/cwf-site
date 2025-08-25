@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ESRI_ItemInformation Culture='en-US'>
+<name>3fcafe2eb73a4db19f6ee05c894def4c</name>
+<guid>E8832863-D14A-4B9A-8770-7AF796CC0C5B</guid>
+<catalogpath></catalogpath>
+<snippet></snippet>
+<description>The Willamette Basin boundary was selected from the HUC 4 boundaries within the USGS Watershed Boundary Dataset.  More information about the WBD can be found at:  &lt;a href=&quot;https://nhd.usgs.gov/wbd.html&quot; target=&quot;_self&quot;&gt;https://nhd.usgs.gov/wbd.html&lt;/a&gt;
+
+This dataset was uploaded to Data Basin and is available with additional information at: /datasets/3fcafe2eb73a4db19f6ee05c894def4c</description>
+<summary></summary>
+<title>3fcafe2eb73a4db19f6ee05c894def4c</title>
+<tags></tags>
+<type>Layer Package</type>
+<typekeywords>
+<typekeyword>Shapefile Feature Class</typekeyword>
+<typekeyword>Layer Package</typekeyword>
+<typekeyword>Data</typekeyword>
+<typekeyword>ArcMap</typekeyword>
+<typekeyword>ArcGlobe</typekeyword>
+<typekeyword>ArcGIS Explorer</typekeyword>
+<typekeyword>lpk</typekeyword>
+</typekeywords>
+<thumbnail>thumbnail/thumbnail.png</thumbnail>
+<documentation></documentation>
+<url></url>
+<datalastmodifiedtime></datalastmodifiedtime>
+<extent>
+<xmin>-123.758531017179</xmin>
+<ymin>43.3560076280058</ymin>
+<xmax>-121.651407531798</xmax>
+<ymax>45.9412966938447</ymax>
+</extent>
+<spatialreference>GCS_North_American_1983</spatialreference>
+<accessinformation>Derived from the USGS Watershed Boundary Dataset&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://nhd.usgs.gov/wbd.html&quot; target=&quot;_self&quot;&gt;https://nhd.usgs.gov/wbd.html&lt;/a&gt;&lt;br /&gt;&lt;/div&gt;</accessinformation>
+<licenseinfo></licenseinfo>
+</ESRI_ItemInformation>
