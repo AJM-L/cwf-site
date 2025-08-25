@@ -129,10 +129,10 @@
 	<div class="py-20 bg-slate-50">
 		<div class="max-w-4xl mx-auto px-6 text-center">
 			<h2 class="text-2xl md:text-3xl font-light text-slate-900 mb-4">
-				Conservation Through Exploration
+				Conservation and Art
 			</h2>
 			<p class="text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-				Understanding and documenting these natural wonders helps protect them for future generations.
+				Join the effort to protect and preserve the Columbia River Watershed for future generations through donations, advocacy, and direct action.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-3 justify-center">
 				<a 
