@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ImageCarousel from '$lib/ImageCarousel.svelte';
 	import BackButton from '$lib/BackButton.svelte';
 	import { base } from '$app/paths';
 	
@@ -11,14 +12,11 @@
 	<meta name="description" content="Learn about Celilo Falls, the historic waterfall and sacred Indigenous fishing site on the Columbia River, submerged in 1957." />
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
+<div class="min-h-screen bg-gradient-to-br from-slate-50 to-emerald-50">
 	<!-- Header Section -->
 	<div class="max-w-6xl mx-auto px-4 py-16">
 		<div class="text-center mb-12">
 			<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Celilo Falls</h1>
-			<div class="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-				Historic Site - Submerged 1957
-			</div>
 			<p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
 				{description}
 			</p>
@@ -78,7 +76,7 @@
 				They document the natural beauty of the falls and the Indigenous fishing practices that had been carried out 
 				for thousands of years at this sacred site. These images are from the Oregon Historical Society Research Library, 
 				and they are much older than the 1957 dam construction. There are more recent images elsewhere, but I could not access the rights to use them.
-				I would suggest ecploring the images at <a href="https://critfc.org/salmon-culture/tribal-salmon-culture/celilo-falls/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Critfc.org</a>
+				I would suggest exploring the images at <a href="https://critfc.org/salmon-culture/tribal-salmon-culture/celilo-falls/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Critfc.org</a>
 			</p>
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -257,6 +255,10 @@
 						cultural events, and advocacy for treaty rights. The Celilo Falls Memorial honors those who fished 
 						at the falls and educates visitors about the loss and history.
 					</p>
+					<p class="text-gray-600 leading-relaxed">
+						For more information about Celilo Falls and its cultural significance, visit the 
+						<a href="https://critfc.org/salmon-culture/tribal-salmon-culture/celilo-falls/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Columbia River Inter-Tribal Fish Commission</a>.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -271,7 +273,9 @@
 				<p>• National Park Service. <a href="https://www.nps.gov/subjects/travelcolumbiariver/celilo-falls.htm" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">"Celilo Falls - Columbia River"</a></p>
 			</div>
 		</div>
+		<div class="mt-8">
+			<BackButton />
+		</div>
 		
-		<BackButton />
 	</div>
 </div>

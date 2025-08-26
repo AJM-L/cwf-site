@@ -1,0 +1,5 @@
+# Configuration - you'll need to set these up in your Cloudflare R2 dashboard
+R2_ENDPOINT_URL = "https://a52b78b2ef4fd5ff01457d7cde0f117e.r2.cloudflarestorage.com"  # Replace with your endpoint
+R2_ACCESS_KEY_ID = "your-access-key-id"  # Replace with your access key
+R2_SECRET_ACCESS_KEY = "your-secret-access-key"  # Replace with your secret key
+R2_BUCKET_NAME = "river-still"  # Replace with your bucket name

@@ -11,7 +11,7 @@ export const chapters = [
         theme: {
             layout: 'hero',
             background: 'bg-white',
-            backgroundImage: '/images/waterfalls/latourell/crashing.jpeg',
+            backgroundImage: '/images/waterfalls/optimized/latourell/crashing.webp',
             alt: 'Mist rising at the base of Latourell Falls.',
             textColor: 'text-black',
             accentColor: '#1B4D3E',
@@ -27,7 +27,7 @@ export const chapters = [
         theme: {
             layout: 'split',
             background: 'bg-white',
-            backgroundImage: '/images/waterfalls/latourell/8R5A5744 (1).jpeg',
+            backgroundImage: '/images/waterfalls/optimized/latourell/8R5A5744 (1).webp',
             alt: 'Trail and canopy near Latourell Falls.',
             textColor: 'text-black',
             accentColor: '#0E3B2E',
@@ -40,7 +40,7 @@ export const chapters = [
         theme: {
             layout: 'timeline',
             background: 'bg-white',
-            backgroundImage: '/images/waterfalls/latourell/Seaside_train_crossing_youngs_bay_1912_OSU_willliamsg_cr.jpg',
+            backgroundImage: '/images/waterfalls/optimized/latourell/Seaside_train_crossing_youngs_bay_1912_OSU_willliamsg_cr.webp',
             alt: 'Passenger train crossing Youngs Bay, 1912.',
             textColor: 'text-black',
             accentColor: '#8B4513',
@@ -53,7 +53,7 @@ export const chapters = [
         theme: {
             layout: 'document',
             background: 'bg-gray-50',
-            backgroundImage: '/images/waterfalls/latourell/old-latourell-house.jpg',
+            backgroundImage: '/images/waterfalls/optimized/latourell/old-latourell-house.webp',
             alt: 'Historic Latourell family house.',
             textColor: 'text-black',
             accentColor: '#4A5568'
@@ -66,7 +66,7 @@ export const chapters = [
         theme: {
             layout: 'contemplative',
             background: 'bg-white',
-            backgroundImage: '/images/waterfalls/latourell/wall.jpeg',
+            backgroundImage: '/images/waterfalls/optimized/latourell/wall.webp',
             alt: 'Basalt wall, moss-draped.',
             textColor: 'text-black',
             accentColor: '#1B4D3E',

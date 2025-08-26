@@ -7,7 +7,7 @@
 	const panels = [
 	  { title: 'Bridal Veil Falls', bg: `${base}/images/waterfalls/optimized/bridal-veil/cover.webp`, content: 'Bridal Veil Falls' },
 	  { title: 'Location', bg: `${base}/images/waterfalls/optimized/bridal-veil/two-falls.webp`, content: 'Located along the Columbia River Gorge in Multnomah County, Oregon, Bridal Veil Falls is a striking two-tiered waterfall that drops approximately 118 to 120 feet over basalt cliffs.' },
-	  { title: 'Water Source', bg: `${base}/images/waterfalls/optimized/bridal-veil/larch-mountain-mt-hood.webp`, content: 'The falls are fed by underground springs originating from Larch Mountain, with Bridal Veil Creek serving as the primary water source.' },
+	  { title: 'Water Source', bg: `${base}/images/waterfalls/optimized/bridal-veil/8R5A5985.webp`, content: 'The falls are fed by underground springs originating from Larch Mountain, with Bridal Veil Creek serving as the primary water source.' },
 	  { title: 'Paper Mill', bg: `${base}/images/waterfalls/optimized/bridal-veil/bridal-veil-paper-mill.webp`, content: 'In the 1880s, one of Oregon\'s earliest paper mills was constructed here, followed by a substantial sawmill operated by the Bridal Veil Falls Lumbering Company.' },
 	  { title: 'Company Town', bg: `${base}/images/waterfalls/optimized/bridal-veil/logging-team.webp`, content: 'This industry transformed Downtown Bridal Veil into a bustling company town, marked by clusters of worker cottages, managers\' residences, and communal spaces.' },
 	  { title: 'Logging Activity', bg: `${base}/images/waterfalls/optimized/bridal-veil/log-flume.webp`, content: 'Logging activity played a central role; timber from Larch Mountain was transported via a log flume down to Bridal Veil, fostering economic growth but at times reducing the creek to a trickle.' },
@@ -19,7 +19,7 @@
 	  { title: 'Wildlife', bg: `${base}/images/waterfalls/optimized/bridal-veil/cougar.webp`, content: 'A large Cougar lives at the top of the mountain.' },
 	  { title: 'Scenic Viewpoint', bg: `${base}/images/waterfalls/optimized/bridal-veil/scenic-viewpoint.webp`, content: 'The falls are located within the Bridal Veil Falls State Scenic Viewpoint, near milepost 28 on the Historic Columbia River Highway, just off Interstate 84 at Exit 28.' },
 	  { title: 'Trails', bg: `${base}/images/waterfalls/optimized/bridal-veil/sign.webp`, content: 'The park features both an overlook trail with views of the Columbia River and a lower trail descending to the base of the falls.' },
-	  { title: 'Hiking Trail', bg: `${base}/images/waterfalls/optimized/bridal-veil/trail.webp`, content: 'There is a partially paved and somewhat steep half-mile trail leading from the parking lot to the falls with plenty of shade, stairs, and switchbacks.' },
+	  { title: 'Hiking Trail', bg: `${base}/images/waterfalls/optimized/bridal-veil/top.webp`, content: 'There is a partially paved and somewhat steep half-mile trail leading from the parking lot to the falls with plenty of shade, stairs, and switchbacks.' },
 	  { title: 'Base of Falls', bg: `${base}/images/waterfalls/optimized/bridal-veil/walls.webp`, content: 'The trail leads directly to the base of the falls, which flow into a small pool surrounded by tall trees and basalt walls.' },
 	  { title: 'Mist', bg: `${base}/images/waterfalls/optimized/bridal-veil/crashing.webp`, content: 'The crashing water fills the air with a cold mist, creating a bubble of protection from the summer heat.' }
 	];
