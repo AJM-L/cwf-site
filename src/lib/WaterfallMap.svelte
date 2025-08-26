@@ -122,7 +122,7 @@
 			]
 		},
 		{
-			name: 'Mt. Hood Region',
+			name: 'Cascades / Mt. Hood',
 			url: `${base}/falls/the-cascades`,
 			description: 'Mountain waterfalls in volcanic landscapes',
 			color: '#dc2626', // red-600
@@ -168,8 +168,8 @@
 		},
 		{
 			name: 'Zigzag Falls',
-			lat: 45.34389,
-			lng: -121.74333,
+			lat: 45.31301642122849,
+			lng: -121.7907918,
 			url: `${base}/falls/the-cascades/zig-zag-falls`
 				}
 			]
@@ -196,8 +196,8 @@
 		},
 		{
 			name: 'Zigzag Falls',
-			lat: 45.34389,
-			lng: -121.74333,
+			lat: 45.31301642122849,
+			lng: -121.7907918,
 			url: `${base}/falls/the-cascades/zig-zag-falls`
 				}
 			]
@@ -1168,7 +1168,6 @@
 					className: 'zone-label',
 					html: `<div class="bg-white px-3 py-2 rounded-lg shadow-lg border-2 border-solid cursor-pointer hover:scale-105 transition-transform" style="border-color: ${zone.color}; color: ${zone.color};">
 						<div class="font-bold text-sm">${zone.name}</div>
-						<div class="text-xs">${zone.waterfalls.length} waterfalls</div>
 					</div>`,
 					iconSize: [120, 50],
 					iconAnchor: [60, 25]
