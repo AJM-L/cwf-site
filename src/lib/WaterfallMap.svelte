@@ -1071,6 +1071,9 @@
 			iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
 			shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png'
 		});
+		
+		// Ensure marker icons work on GitHub Pages
+		console.log('Leaflet initialized with marker icon fix for GitHub Pages');
 	});
 
 	async function renderOverviewMode() {
@@ -1199,12 +1202,13 @@
 
 			// Add individual waterfall markers within zone
 			zone.waterfalls.forEach((waterfall) => {
+				console.log(`Creating marker for ${waterfall.name} at [${waterfall.lat}, ${waterfall.lng}]`);
 				const marker = L.marker([waterfall.lat, waterfall.lng], {
 					icon: L.divIcon({
 						className: 'waterfall-marker',
-						html: `<div class="w-3 h-3 rounded-full shadow-lg" style="background-color: ${zone.color};"></div>`,
-						iconSize: [12, 12],
-						iconAnchor: [6, 6]
+						html: `<div class="w-4 h-4 rounded-full shadow-lg border-2 border-white" style="background-color: ${zone.color};"></div>`,
+						iconSize: [16, 16],
+						iconAnchor: [8, 8]
 					})
 				}).addTo(currentLayerGroup);
 
@@ -1338,7 +1342,15 @@
 
 		// Add detailed markers for waterfalls in this zone
 		zone.waterfalls.forEach((waterfall) => {
-			const marker = L.marker([waterfall.lat, waterfall.lng]).addTo(currentLayerGroup);
+			console.log(`Creating zone marker for ${waterfall.name} at [${waterfall.lat}, ${waterfall.lng}]`);
+			const marker = L.marker([waterfall.lat, waterfall.lng], {
+				icon: L.divIcon({
+					className: 'waterfall-marker',
+					html: `<div class="w-4 h-4 rounded-full shadow-lg border-2 border-white" style="background-color: ${zone.color};"></div>`,
+					iconSize: [16, 16],
+					iconAnchor: [8, 8]
+				})
+			}).addTo(currentLayerGroup);
 			
 			// Create detailed popup
 			const popupContent = `
@@ -1478,6 +1490,18 @@
 	:global(.waterfall-marker) {
 		background: none !important;
 		border: none !important;
+		z-index: 1000 !important;
+	}
+	
+	:global(.waterfall-marker div) {
+		display: block !important;
+		width: 16px !important;
+		height: 16px !important;
+		border-radius: 50% !important;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+		border: 2px solid white !important;
+		position: relative !important;
+		z-index: 1001 !important;
 	}
 
 	:global(.watershed-label) {
